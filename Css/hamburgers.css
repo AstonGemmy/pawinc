@@ -1,0 +1,86 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  border-radius:200px;
+  text-transform: none;
+  background-color: transparent;  
+  background-color:#394263;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  width:100%;
+  height: 100%;
+  text-align: center;
+}
+
+.hamburger:hover {opacity: 0.7;}
+.hamburger.is-active:hover {opacity: 0.7;}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {background-color: rgb(255, 255, 255);}
+
+.hamburger-box {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: relative;
+}
+
+.hamburger-inner {
+  top: 50%;
+  transform:translateY(-50%);
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 100%;
+  height: 3px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  display: block;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {content: "";}
+.hamburger-inner::before {top: -8px;left: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;}
+.hamburger-inner::after {top: 8px;right: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;}
+
+
+/*
+* Emphatic
+*/
+.hamburger--emphatic {overflow: hidden;}
+.hamburger--emphatic .hamburger-inner {transition: background-color 0.125s 0.175s ease-in;}
+.hamburger--emphatic.is-active .hamburger-inner {
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  background-color: transparent !important;
+}
+.hamburger--emphatic.is-active .hamburger-inner::before {
+  left: -80px;
+  top: -80px;
+  transform: translate3d(80px, 80px, 0) rotate(45deg);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hamburger--emphatic.is-active .hamburger-inner::after {
+  right: -80px;
+  top: -80px;
+  transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

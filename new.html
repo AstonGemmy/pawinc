@@ -1,0 +1,169 @@
+<head>
+<title>Sample code - Traversing an HTML Table with JavaScript and DOM Interfaces</title>
+<style>
+    
+   .col {
+       -moz-column-count: 5;
+-moz-column-gap: 30px;
+-webkit-column-count: 5;
+-webkit-column-gap: 30px;
+column-count: 5;
+column-gap: 30px;
+background-color:red;
+}
+
+.flexbox-container div:nth-child(1) {background-color:red; min-width:150px; margin-top:100px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container div:nth-child(2) {background-color:green; min-width:150px; margin-top:50px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container div:nth-child(3) {background-color:brown; min-width:250px; margin-top:0px;height:250px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container div:nth-child(4) {background-color:blue; min-width:150px; margin-top:50px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container div:nth-child(5) {background-color:yellow; min-width:150px; margin-top:100px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-2 div:nth-child(1) {background-color:yellow; min-width:150px; margin-top:10px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-2 div:nth-child(2) {background-color:blue; min-width:150px; margin-top:50px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-2 div:nth-child(3) {background-color:brown; min-width:250px; margin-top:100px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-2 div:nth-child(4) {background-color:brown; min-width:150px; margin-top:50px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-2 div:nth-child(5) {background-color:red; min-width:150px; margin-top:10px;height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container, .flexbox-container-2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  align-content: center;
+  background-color: blue;
+  margin:20px;
+}
+
+.flexbox-container-e {
+    padding-top:20px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: start;
+  align-content: center;
+}
+
+.flexbox-container-e div {background-color:red; min-width:calc((100% - 40px) / 2);height:200px;text-align:center;font-size:4rem;display:flex;align-items:center;justify-content:center;}
+
+.flexbox-container-e div:nth-child(odd) {margin-top:100px;}
+
+.anima {
+    position:relative;
+    text-align:center;
+    width:100%;
+    height:800px;
+    margin:auto auto
+}
+
+.animat-div {width:300px;height:300px;background:red;position:absolute;font-size:20px;left:50%;top:50%;transform:display:flex; align-items:center;justify-content:center;transform-origin:top left;transform-style:preserve-3D;}
+
+.animt-div {
+  background: lightblue;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+}
+
+.box-rotate {
+    animation: boxrotate 3s ease-in-out forwards; 
+}
+
+.box-rotate-2 {
+    animation: boxrotate-2 3s cubic-bezier(.8, 0, .2, 1) forwards; 
+}
+
+.box-rotate-3 {
+    animation: boxrotate-3 3s cubic-bezier(.8, 0, .2, 1) forwards; 
+}
+
+.box-rotate-4 {
+    animation: boxrotate-4 3s cubic-bezier(.8, 0, .2, 1) forwards; 
+}
+
+.box-rotate-5 {
+    animation: boxrotate-5 3s cubic-bezier(.8, 0, .2, 1) forwards; 
+}
+
+@keyframes boxrotate {
+  from {transform: rotate(0deg)};
+  to {transform: rotate(-120deg)};
+}
+
+@keyframes boxrotate-2 {
+  50% {transform: rotate(-60deg)};
+  100% {transform: rotate(60deg)};
+}
+
+@keyframes boxrotate-3 {
+  50% {transform: rotate(0deg)};
+  100% {transform: rotate(0deg)};
+}
+
+@keyframes boxrotate-4 {
+  50% {transform: rotate(60deg)};
+  100% {transform: rotate(-60deg)};
+}
+
+@keyframes boxrotate-5 {
+  50% {transform: rotate(120deg)};
+  100% {transform: rotate(-120deg)};
+}
+
+
+</style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="">1</div>
+    <div id="">2</div>
+    <div id="">3</div>
+    <div id="">4</div>
+    <div id="">5</div>
+    </div>
+    <div class="flexbox-container-2">
+      <div id="">10</div>
+        <div id="">9</div>
+          <div id="">8</div>
+            <div id="">7</div>
+              <div id="">6</div>
+    </div>
+    
+    <div class="flexbox-container-e">
+      <div id="">1</div>
+        <div id="">2</div>
+          <div id="">3</div>
+            <div id="">4</div>
+              <div id="">5</div>
+              <div id="">6</div>
+    </div>
+    
+    <div class="anima">
+         <div class="animat-div">1</div>
+          <div class="animat-div">2</div>
+           <div class="animat-div">3</div>
+            <div class="animat-div">4</div>
+            <div class="animat-div">5</div>
+    </div>
+    
+             <div class="" id="box">Box</div>
+</body>
+<script type="text/javascript">
+   document.documentElement.addEventListener("click", function () {
+        document.getElementsByClassName("animat-div")[0].classList.add("box-rotate");
+        document.getElementsByClassName("animat-div")[1].classList.add("box-rotate-2");
+        document.getElementsByClassName("animat-div")[2].classList.add("box-rotate-3");
+        document.getElementsByClassName("animat-div")[3].classList.add("box-rotate-4");
+        document.getElementsByClassName("animat-div")[4].classList.add("box-rotate-5");
+    });
+</script>
+</html>

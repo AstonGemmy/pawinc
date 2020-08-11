@@ -1,0 +1,333 @@
+/* O'naire Corporation.CSS 4.10 April 2018 by Aston Gemmy */
+
+/* Border Colour */
+.border-theme, .border-theme:focus {
+	border: 2px solid #34495E;
+}
+
+.border-yellow, .border-yellow:focus {
+	border: 2px solid orange;
+}
+
+.border-none, .border-none:focus {
+	border: 0px solid #34495E;
+}
+
+.border-deep-blue, .border-deep-blue:focus {
+	border: 2px solid #002060;
+}
+
+.border-red, .border-red:focus {
+	border: 2px solid red;
+}
+
+.border-maroon, .border-maroon:focus {
+	border: 2px solid #610B00;
+}
+
+.border-crimson, .border-crimson:focus {
+	border: 2px solid #C00000;
+}
+
+.border-orange, .border-orange:focus {
+	border: 2px solid #FF3300;
+}
+
+.border-blue, .border-blue:focus {
+	border: 2px solid #0092FA;
+}
+
+.border-deep-blue-shade, .border-deep-blue-shade:focus {
+	border: 2px solid rgba(1,33,97,0);
+}
+
+.border-green, .border-green:focus {
+	border: 2px solid #00A63F;
+}
+
+.border-fine-green, .border-fine-green:focus {
+	border: 2px solid #5F9934;
+}
+
+.border-white, .border-white:focus {
+	border: 2px solid #FFFFFF;
+}
+
+.border-grey, .border-grey:focus {
+	border: 2px solid #F1F1F1;
+}
+
+.border-black, .border-black:focus {
+	border: 2px solid #000000;
+}
+
+.border-pink, .border-pink:focus {
+	border: 2px solid pink;
+}
+
+.border-fine-purple, .border-fine-purple:focus {
+	border: 2px solid #AF2764;
+}
+
+/* Border Position */
+.border-left, .border-left:focus {
+	border-left: 2px solid inherit;
+	border-top:0;
+	border-right:0;
+	border-bottom:0;
+}
+
+.border-bottom, .border-bottom:focus {
+	border-bottom: 1px solid inherit;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+}
+
+.border-top, .border-top:focus {
+	border-top: 1px solid inherit;
+	border-left:0;
+	border-right:0;
+	border-bottom:0;
+}
+
+.border-right, .border-right:focus {
+	border-right: 1px solid inherit;
+	border-left:0;
+	border-top:0;
+	border-bottom:0;
+}
+	
+/* Text Colour */
+.text-theme, .text-theme:hover {
+	color:#34495E;
+}
+
+.text-theme-noback, .text-theme-noback:hover {
+	background-color:white;
+	color:#34495E;
+}
+
+.text-deep-blue, .text-deep-blue:hover {
+	color:#002060;
+}
+
+.text-red, .text-red:hover {
+	color:red;
+}
+
+.text-deep-red, .text-deep-red:hover {
+	color:#DB0000;
+}
+
+.text-pink, .text-pink:hover {
+	color:pink;
+}
+
+.text-blue, .text-blue:hover {
+	color:#0092FA;
+}
+
+.text-victory-theme, .text-victory-theme:hover {
+	color:rgba(66, 146, 157, 1);
+}
+	
+.text-yellow, .text-yellow:hover {
+	color:orange;
+}
+
+.text-light-blue, .text-light-blue:hover {
+	color:#30ACEC;
+}
+
+.text-green, .text-green:hover {
+	color:#00A63F;
+}
+
+.text-fine-green, .text-fine-green:hover {
+	color:#5F9934;
+}
+
+.text-maroon, .text-maroon:hover {
+	color:#610B00;
+}
+
+.text-crimson, .text-crimson:hover {
+	color:#C00000;
+}
+
+.text-purple, .text-purple:hover {
+	color:purple;
+}
+
+.text-fine-purple, .text-fine-purple:hover {
+	color:#AF2764;
+}
+
+.text-orange, .text-orange:hover {
+	color:#FF3300;
+}
+
+.text-white, .text-white:hover {
+	color:#FFFFFF;
+}
+
+.text-grey, .text-grey:hover {
+	color:#F1F1F1;
+}
+
+.text-black, .text-black:hover {
+	color:#000000;
+}
+
+/* Background Colour */
+.theme, .theme:hover {
+	background-color:#34495e;
+	color:#FFF;
+}
+
+.deep-blue, .deep-blue:hover {
+	background-color:#002060;
+	color:#FFF;
+}
+
+.red, .red:hover {
+	background-color:red;
+	color:#FFF;
+}
+
+.yellow, .yellow:hover {
+	background-color:orange;
+	color:#000;
+}
+
+.deep-red, .deep-red:hover {
+	background-color:#DB0000;
+	color:#FFF;
+}
+
+.crimson, .crimson:hover {
+	background-color:#C00000;
+	color:#FFF;
+}
+
+.pink, .pink:hover {
+	background-color:pink;
+	color:#FFF;
+}
+
+.blue, .blue:hover {
+	background-color:#0092FA;
+	color:#FFF;
+}
+
+.fine-blue-light, .fine-blue-light:hover {
+	background-color:rgba(1,33,97,0.5);
+	color:#34495e;
+}
+
+.deep-blue-shade, .deep-blue-shade:hover {
+	background-color:rgba(204,211,223,1);
+	color:#34495e;
+}
+
+.light-blue, .light-blue:hover {
+	background-color:#30ACEC;
+	color:#FFF;
+}
+
+.green, .green:hover {
+	background-color:#00A63F;
+	color:#FFF;
+}
+
+.fine-green, .fine-green:hover {
+	background-color:#5F9934;
+	color:#FFF;
+}
+
+.purple, .purple:hover {
+	background-color:purple;
+	color:#FFF;
+}
+
+.fine-purple, .fine-purple:hover {
+	background-color:#AF2764;
+	color:#FFF;
+}
+
+.victory-theme, .victory-theme:hover {
+	background-color:rgba(66, 146, 157, 1);
+	color:#fff;
+}
+
+.maroon, .maroon:hover {
+	background-color:#610B00;
+	color:#FFF;
+}
+
+.orange, .orange:hover {
+	background-color:#FF3300;
+	color:#FFF;
+}
+
+.white, .white:hover {
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+.grey, .grey:hover {
+	background-color:#F1F1F1;
+	color:#000000;
+}
+
+.grey_rgb, .grey_rgb:hover {
+	background-color:rgba(241,241,241,0.3);
+	color:#FF3300;
+	box-shadow: -10px -20px 10px rgba(241, 241, 241, 0.2), -10px 20px 10px rgba(241, 241, 241, 0.2), 10px -20px 10px rgba(241, 241, 241, 0.2), 10px 20px 10px rgba(241, 241, 241, 0.2);
+}
+
+.black_rgb, .black_rgb:hover {
+	background-color:rgba(0, 0, 0, 0.8);
+	color:#FFFFFF;
+}
+
+.black, .black:hover {
+	background-color:#000000;
+	color:#FFF;
+}
+
+.button-orange, .button-orange:hover {
+	background-color:#FFFFFF;
+	color:#FF3300;
+}
+
+.button-red, .button-red:hover {
+	background-color:#FFFFFF;
+	color:#FF3300;
+}
+
+.button-purple, .button-purple:hover {
+	background-color:#FFFFFF;
+	color:purple;
+}
+
+.button-green, .button-green:hover {
+	background-color:#FFFFFF;
+	color:#00A63F;
+}
+
+.button-fine-green, .button-fine-green:hover {
+	background-color:#FFFFFF;
+	color:#5F9934;
+}
+
+.button-yellow, .button-yellow:hover {
+	background-color:orange;
+	color:black;
+}
+
+.button-grey, .button-grey:hover {
+	background-color:#FFFFFF;
+	color:#F1F1F1;
+}

@@ -1,0 +1,810 @@
+<?php
+
+	require_once 'class.user.php';
+	$home = new USER();
+	
+	session_start();
+	
+	// Select all news from MySQL database table
+	$admin_slide = $home->runQuery("SELECT * FROM tbl_paw_board");
+	$admin_slide->execute();
+	
+	// Select all news from MySQL database table
+	$intro_slide = $home->runQuery("SELECT * FROM tbl_paw_board");
+	$intro_slide->execute();
+	
+?>
+	
+<!Doctype HTML>
+<Html Lang="En">
+	
+	<!--Head Begins-->
+	<Head>
+		
+		<!-- Meta -->
+		<meta name="theme-color" content="">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:description" name="description" content="PAW">
+		<meta property="og:author" name="author" content="Aston Gemmy O'naire">
+		<meta property="og:keywords" name="keywords" content=""/>
+		<meta property="og:image" name="image" content="/Images/Thumbnails/Thumbnail.png"/>
+		<title> Home | PAW </title>
+		<!-- Meta Ends -->
+		
+		<!-- core CSS -->
+		<link type="text/css" href="Css/all.css" rel="stylesheet">
+		<link type="text/css" href="Css/fonts.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW_responsive.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW_color.css" rel="stylesheet">
+		<link type="text/css" href="Css/animate.css" rel="stylesheet">
+		<!-- Core CSS Ends -->
+		
+		<!-- Site Icon -->
+		<link rel="shortcut icon" href="Images/Favicon/PAW.jpg">
+		<!-- Site Icon Ends -->
+    
+	</Head>
+	<!--Head Ends-->
+	
+	<!-- Body -->
+	<body>
+		
+		<!--News Slide Ends-->
+		<div class="marquee">
+			<div class="marquee-header">Announcment</div>
+			<marquee>Announcment</marquee>
+			<div class="marquee-close-btn"><i class="fa fa-times"></i></div>
+		</div>
+		<div class="header" id="header">
+		
+			<div class="header-brand" id="header-brand">
+				
+				<div class="brand-logo">
+					<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+				</div>
+				
+				<div class="brand-name" id="brand-name">
+					Pentecostal Assemblies of the World. Inc					
+				</div>
+				
+				<div class="hamburger-menu">
+					<i class="fa fa-bars"></i>						
+				</div>			
+				
+			</div>
+			
+		</div>
+		
+		<div class="main">
+			
+			
+			
+			<div id="slide-cover">
+				
+				<div id="slideshow-container">
+					
+				</div>
+				
+				<!--Dots Begins-->
+				<div id="slide-item-cover" class="slide-item-cover text-align-center">
+					<span class="slide-item-selector"></span>					
+				</div>
+				<!--Dots Ends-->
+				
+				<div id="slide-item-navigator-left">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				
+				<div id="slide-item-navigator-right">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+				
+			</div>
+			
+			<div class="photo-gallery">
+				<img src="Images/Site/images (1).jpeg">				
+				<img src="Images/Site/images (2).jpeg">				
+				<img src="Images/Site/images (3).jpeg">				
+				<img src="Images/Site/images (4).jpeg">				
+				<img src="Images/Site/images (5).jpeg">				
+				<img src="Images/Site/images (6).jpeg">				
+				<img src="Images/Site/images (7).jpeg">				
+				<img src="Images/Site/images (8).jpeg">				
+				<img src="Images/Site/images (9).jpeg">				
+				<img src="Images/Site/images (10).jpeg">				
+				<img src="Images/Site/images (11).jpeg">				
+				<img src="Images/Site/images (12).jpeg">				
+				<img src="Images/Site/images (13).jpeg">				
+				<img src="Images/Site/images (14).jpeg">				
+				<img src="Images/Site/images (15).jpeg">				
+			</div>
+			
+			<div class="mission-vision-statement">
+				
+				<div class="mission-vision-container">
+					<div class="mission-statement">
+						<div class="">
+							...to glofiry the Lord; to establish true Pentecostal Churches Worldwide; to create
+							Christian Communities of believers and to address and impact the holistic needs of humanity
+						</div>
+						<div class="">
+							<img src="Images/Assets/Mission Vision Values.png" class="" width="100%" height="" alt="">
+						</div>
+					</div>
+					<div class="vision-statement">
+						<div class="">
+							<img src="Images/Assets/Vision.png" class="" width="100%" height="" alt="">
+						</div>
+						<div class="">
+							...to reach the lost by spreading the gospel of Christ Worldwide; and to equip and empower 
+							followers of Christ to live transformed lives
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="days-of-activities">
+				
+				<div class="main-caption-cover main-caption-left">
+					<div class="main-caption">
+						Days of Activities
+					</div>
+				</div>
+		
+				<div class="days-of-activities-section">
+					
+					<div class="days-of-activities-container">
+						
+						<div class="day-and-activity">
+							<div class="day-icon">
+								<i class="fas fa-gift"></i>
+							</div> 
+							<div class="day">
+								<div>Monday</div>
+							</div>
+
+							<div class="programme">
+								<div class="programme-title text-bold">
+									Bible Class
+								</div> 
+								<div class="programme-description">
+									Starts by 6:00pm and ends by 8pm
+								</div> 
+								<div class="programme-footnote">
+									Come with a friend
+								</div>
+							</div>
+						</div>
+						
+						<div class="day-and-activity">
+							<div class="day-icon">
+								<i class="fas fa-gift"></i>
+							</div> 
+							<div class="day">
+								<div>Wednesday</div>
+							</div>
+
+							<div class="programme">
+								<div class="programme-title text-bold">
+									Mid Week Service
+								</div> 
+								<div class="programme-description">
+									Starts by 6:00pm and ends by 8pm
+								</div> 
+								<div class="programme-footnote">
+									Come with a friend and pray for friends and families
+								</div>
+							</div>
+						</div>
+						
+						<div class="day-and-activity">
+							<div class="day-icon">
+								<i class="fas fa-gift"></i>
+							</div> 
+							<div class="day">
+								<div>Friday</div>
+							</div>
+
+							<div class="programme">
+								<div class="programme-title text-bold">
+									Weekend Service
+								</div> 
+								<div class="programme-description">
+									Starts by 6:00pm and ends by 8pm
+								</div> 
+								<div class="programme-footnote">
+									Come with a friend
+								</div>
+							</div>
+						</div>
+						
+						<div class="day-and-activity">
+							<div class="day-icon">
+								<i class="fas fa-gift"></i>
+							</div> 
+							<div class="day">
+								<div>Sunday</div>
+							</div>
+
+							<div class="programme">
+								<div class="programme-title text-bold">
+									Divine Service
+								</div> 
+								<div class="programme-description">
+									Starts by 9:00am
+								</div> 
+								<div class="programme-footnote">
+									Come with a friend
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+		
+			</div>				
+			
+			<div class="excerpts" id="excerpts">
+			
+				<div class="main-caption-cover main-caption-center">
+					<div class="main-caption">
+						Excerpts
+					</div>
+				</div>
+				
+				<div id="excerpts-left">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				
+				<div id="excerpts-right">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+				
+				<div class="excerpts-slide" id="excerpts-slide">
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					<div class="each">
+						<div class="content">
+							John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.John 3:16 For God so loved the world that he gave His only begotten son that
+							whosoever believeth in Him should not perish but have everlasting life.
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			
+			<div class="leadership">
+				
+				<div class="main-caption-cover main-caption-left">
+					<div class="main-caption">
+						Leadership
+					</div>
+				</div>
+				
+				<div class="leadership-container">
+					
+					<div class="leader">
+						<div class="leader-image">
+							<img src="Images/Logo/PAW.jpg" width="100%" height="">
+						</div>
+						<div class="leader-name-tag">
+							Bishop S. N. Nkanang
+							<div class="leader-name-office">
+								Diocesan
+							</div>
+						</div>
+					</div>
+					<div class="leader">
+						<div class="leader-image">
+							<img src="Images/Logo/PAW.jpg" width="100%" height="">
+						</div>
+						<div class="leader-name-tag">
+							Bishop S. N. Nkanang
+							<div class="leader-name-office">
+								Diocesan
+							</div>
+						</div>
+					</div>
+					<div class="leader">
+						<div class="leader-image">
+							<img src="Images/Logo/PAW.jpg" width="100%" height="">
+						</div>
+						<div class="leader-name-tag">
+							Bishop S. N. Nkanang
+							<div class="leader-name-office">
+								Diocesan
+							</div>
+						</div>
+					</div>
+					<div class="leader">
+						<div class="leader-image">
+							<img src="Images/Logo/PAW.jpg" width="100%" height="">
+						</div>
+						<div class="leader-name-tag">
+							Bishop S. N. Nkanang
+							<div class="leader-name-office">
+								Diocesan
+							</div>
+						</div>
+					</div>
+					<div class="leader">
+						<div class="leader-image">
+							<img src="Images/Logo/PAW.jpg" width="100%" height="">
+						</div>
+						<div class="leader-name-tag">
+							Bishop S. N. Nkanang
+							<div class="leader-name-office">
+								Diocesan
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<a href="#" class="all-leaders">View all leaders</a>
+				
+			</div>
+			
+			<div class="testimonies" id="testimonies">
+				
+				<div class="main-caption-cover testimonies-header main-caption-right">
+					<div class="main-caption">
+						Testimonies
+					</div>
+				</div>
+				
+				<div id="testimonies-left">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				
+				<div id="testimonies-right">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+				
+				<div class="testimonies-cover" id="testimonies-cover">
+					
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							1. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							2. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							3. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							4. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							5. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							6. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							7. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							8. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							9. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							10. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							11. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					<div class="testimonies-container" id="testimonies-container">
+						
+						<div class="testimonies-image">
+							<img src="Images/Logo/PAW.jpg" class="" width="100%" height="" alt="">
+						</div>
+						
+						<div class="testimonies-content">
+							12. I suffered from cancer pf the lungs but during the 2019 annual 
+							convention at Minya Ntak, I received full healing and today i am whole again.<br/>
+							Praise Jesus!
+						</div>
+						
+						<div class="testimonies-testifier">
+							Jerry, Birmingham
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="testimonies-footer">
+					<a href="#" class="read-more-btn">Read More</a>
+				</div>
+				
+			</div>
+			
+			<div class="event">
+				
+				<div class="main-caption-cover main-caption-center">
+					<div class="main-caption">
+						Upcoming Events
+					</div>
+				</div>
+				
+				<div class="upcoming-event">
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+					<div class="event-item">
+						<div class="event-image">
+							<img src="Images/Site/wolfgang-hasselmann-_C77E3TxDMw-unsplash.jpg" width="100%">
+						</div>
+						<div class="event-date">2nd July, 2020</div>
+						Our mission is to establish true pentecostal churches worldwide
+						Our mission is to establish true pentecostal churches worldwide
+						Our mission is to establish true pentecostal churches worldwide
+						<div class="event-venue">38 Aka Road, Uyo</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		<div class="footer">
+			
+			<div class="newsletter">
+				<span class="newsletter-text">Receive updates frequently</span>
+				<div class="newsletter-cover">
+					<input type="search" class="">
+					<button type="submit" class="newsletter-btn">Subscribe</button>
+				</div>	
+			</div>
+			
+			<div class="footer-section-one">
+				
+				<div class="footer-container">
+					<div class="main-caption-footer">Contact Us</div>
+					<aside class="contact">
+						Visit us at District Headquarters
+						<address>
+						38 Aka Road, Uyo, Nigeria
+						</address>
+						<a href="mailto:info.paw@mail.com">info.paw@mail.com</a>
+						<br/>
+						<a href="tel:+2348103561805">+234 810 356 1805</a>
+					</aside>	
+				</div>
+				
+				<div class="footer-container">
+					<div class="main-caption-footer">Auxilliaries</div>							
+					<ol class="auxilliary">
+						<li class="">Men Fellowship (PAMA)</li>
+						<li class="">Women Fellowship (NAWA)</li>
+						<li class="">Youth Fellowship</li>
+						<li class="">Elder's Board</li>
+						<li class="">Children</li>
+					</ol>
+				</div>
+				
+				<div class="footer-container">
+					<div class="main-caption-footer">Assemblies</div>							
+					<ol class="auxilliary">
+						<li class="">Uyo-Township</li>
+						<li class="">Use Offot</li>
+						<li class="">Itiam Etoi</li>
+						<li class="">Ifa Ikot Okpon</li>
+						<li class="">Mbak Etoi</li>
+						<li class="">Idu Uruan Fellowship Center</li>
+					</ol>
+				</div>
+				
+				<div class="footer-container">
+					<div class="main-caption-footer">Social Handles</div>							
+					<ol class="auxilliary">
+						<li class=""> <i class="fab fa-facebook"></i> Facebook</li>
+						<li class=""> <i class="fab fa-twitter"></i> Twitter</li>
+						<li class=""> <i class="fab fa-instagram"></i> Instagram</li>
+						<li class=""> <i class="fab fa-whatsapp"></i> Whatsapp</li>
+						<li class=""> <i class="fab fa-facebook-messenger"></i> Messenger</li>
+					</ol>
+				</div>				
+				
+			</div>
+			
+			<div class="copyright">© Copyright PAW Uyo-Township 2020</div>
+			
+		</div>
+		
+	</body>
+	<!-- Body Ends -->
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="Js/PA.js"></script>
+	
+</html>

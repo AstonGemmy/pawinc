@@ -1,0 +1,169 @@
+/* O'naire Corporation.CSS 4.10 April 2018 by Aston Gemmy */
+@media screen and (max-width: 1081px) {
+	.main-caption-cover {width:100%;padding:0px 16px;}
+	.footer-section-one {flex-wrap:wrap;justify-content:space-between;}
+}
+
+@media screen and (max-width: 901px) {
+	
+	.leadership-container {flex-wrap:wrap;width:100%;}
+	
+	.days-of-activities-section {padding:10px 8px 30px 8px;width:100%;}
+	.day-and-activity:nth-child(1), .day-and-activity:nth-child(2), .day-and-activity:nth-child(3), .day-and-activity:nth-child(4) {width:calc((100% - 80px) / 2);}
+	.day-and-activity:nth-child(5) {width:calc(100% - 40px);}
+
+	.mission-vision-container {width:90%;}
+
+	.testimonies-cover {width:90%;}
+	.testimonies-container {min-width:calc((100% - 80px) / 2);margin:10px 20px;}
+	.leadership-footer, .testimonies-footer {width:100%;}
+
+	.upcoming-event {width:100%;}
+
+	.main-caption-left {padding-left:85px}
+	.main-caption-right {padding-right:85px;}
+
+	.photo-gallery {-webkit-column-count:4;-moz-column-count:4;column-count:4;padding:0px 0px 0px 0px;}
+
+
+}
+
+@media screen and (max-width: 776px) {
+	
+	.header {padding:5px;}	
+	.brand-name {font-size:2rem;height:auto;text-align:center;}	
+	.brand-name-on-scroll {font-size:1.5rem;}
+	
+
+    #slide-cover {height:50vh;}
+	.slide-title-positioning {top:0%;height:100%;overflow:hidden;padding-top:25vh;}
+    #slide-item-navigator-left {left:10px;width:30px;height:30px;line-height:30px;}	
+	#slide-item-navigator-right {right:10px;width:30px;height:30px;line-height:30px;}	
+	.slide-font-title {
+		font-size: calc( 1.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20)));
+		line-height: calc( 1.4 * (2.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20))));
+	}	
+	.slide-font-subtitle {
+		transform:translateY(0em);
+		font-size: calc( 1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20)));
+		line-height: calc( 1.4 * (1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20))));
+	}
+	
+
+	.mission-vision-statement {background-size: 100%;}	
+	.mission-vision-container {width:100%;padding:0px 16px;}	
+	.mission-statement {flex-direction:column;padding:20px 5px;font-size:18px;line-height:25px;}	
+	.mission-statement div, .vision-statement div {width:100%;height:100%;padding: 12px; }
+	.mission-statement div img, .vision-statement div img {width:100%;height:100%;padding: 12px; }	
+	.vision-statement {flex-direction:column-reverse;padding:20px 5px;font-size:18px;line-height:25px;}	
+	.mission-statement:before {position:relative;top:auto;left:auto;}	
+	.vision-statement:before {left:15px;}
+	.mission-statement:after, .vision-statement:after {bottom:15px;right:15px;}
+
+	
+	.leader {width:100%;}
+	.leadership-container {flex-direction: column;justify-content: space-around;}
+	.leader:nth-child(3) {width:100%;}
+	.leader:nth-child(3) .leader-image {width:250px;height:250px;}	
+	.leadership-container .leader:nth-child(1) {margin-top:10px;}
+	.leadership-container .leader:nth-child(2) {margin-top:10px;}
+	.leadership-container .leader:nth-child(4) {margin-top:10px;}
+	.leadership-container .leader:nth-child(5) {margin-top:10px;}	
+	.leader-image {width:200px;margin:50px auto 0px auto;height:200px;}
+	.leader-name-tag {width:100%;background-color:unset;box-shadow:unset;color:#FF3300;}	
+	.leader-name-office {color:#777;}
+
+
+	.day-and-activity:nth-child(1), .day-and-activity:nth-child(2), .day-and-activity:nth-child(3), .day-and-activity:nth-child(4) {width:calc((100% - 20px) / 2);}
+	.day-and-activity:nth-child(5) {width:calc(100% - 10px);}
+    .day-and-activity {margin:10px 5px;}
+
+
+	.testimonies {
+		background:linear-gradient(#f0f0f0, transparent), url('../Images/Assets/Testimony/Testimony mobile.jpeg');
+		background-repeat:no-repeat;
+		background-size:100%;
+		background-position: normal;
+	}
+	.testimonies-footer {width:100%;padding:16px 16px;}	
+	.testimonies-cover {width:85%;margin:0px auto;}	
+	.testimonies-container {min-width:calc(100% - 10px);margin:10px 10px;background:#f0f0f0;}	
+	.testimonies-content {color:#777;}	
+	#testimonies-left, #testimonies-right {font-size:20px;width:30px;height:30px;line-height:30px;top:20%;}
+	#testimonies-left {
+		left:50px;
+		background:linear-gradient(to right, rgba(205,205,205,0.7), transparent);
+	}	
+	#testimonies-right {
+	    right:50px;
+		background:linear-gradient(to left, rgba(205,205,205,0.7), transparent);
+	}
+		
+	
+	.upcoming-event {padding:0px 16px 30px 16px;width:90%;}
+	.event-item:nth-child(even) {width:calc(100% - 190px);margin-left: 150px;margin-top:50px;margin-bottom:0px;}
+	.event-item:nth-child(odd) {width:calc(100% - 190px);margin-right: 150px;margin-top:50px;}
+	.event-item:nth-child(odd) .event-image {right:-170px;top:0;}
+	.event-item:nth-child(even) .event-image {left:-170px;right:auto;top:0;}
+	.event-item:nth-child(even):before {left:auto;right:-20px;}	
+	.event-item:nth-child(even):after {left:auto;right:-32px;}	
+	.event-date {width:auto;max-width:200px;}
+	.event-item:nth-child(even) .event-date {left:auto;right:0;}
+	
+	.footer-container {width:100%}
+	.newsletter {width:90%;}	
+	.newsletter-text {padding:8px 8px;font-size:18px;}
+	
+
+	
+	#excerpts-left, #excerpts-right {top:15%;font-size:20px;width:30px;height:30px;line-height:30px;}	
+	.excerpts {
+		padding:0px 32px 0px 32px;
+		background:url("../Images/Assets/Excerpts/Excerpts mobile.jpeg");
+		background-attachment: normal;
+        background-size:100%;
+	}	
+	#excerpts-left {
+		color:#FFFFFF;
+		background:linear-gradient(to right, rgba(205,205,205,0.7), transparent);
+	}
+	
+	#excerpts-right {
+		color:#FFFFFF;
+		background:linear-gradient(to left, rgba(205,205,205,0.7), transparent);
+	}	
+	.each {min-width:280px;margin:0px 10px;font-size:15px;}
+	
+
+	.main-caption {font-size:25px;margin:30px auto 10px auto;padding:0px 16px;font-weight:bold;}	
+	.main-caption-left, .main-caption-right {text-align:center;padding-left:0px;padding-right:0px;}	
+	.main-caption:before, .main-caption:after {display:none;}
+	
+
+	.photo-gallery {-webkit-column-count:3;-moz-column-count:3;column-count:3;}
+	
+
+	.media-intro {line-height:20px;font-size:20px;padding-top:20px;}
+	.media-btn, .read-more-btn, .leadership .all-leaders {font-size:20px;}
+
+}
+
+@media screen and (max-width: 680px) {
+	
+	.day {font-size:14px;padding:5px;}	
+	.programme {font-size:12px;line-height:15px;}
+    .upcoming-event {padding:0px 8px 30px 8px;width:95%;}
+	.event-item:nth-child(even), .event-item:nth-child(odd) {width:90%;margin:30px auto;}
+	.event-item:nth-child(odd) .event-image, .event-item:nth-child(even) .event-image {right:unset;top:unset;left:unset;bottom:unset;position:relative;width:100%;height:150px;margin:10px auto;}
+
+	.event-item:nth-child(even):before {left:auto;right:-20px;}	
+	.event-item:nth-child(even):after {left:auto;right:-32px;}
+	.event-date {min-width:200px;max-width:unset;}
+	
+	
+	
+}
+
+@media screen and (max-width: 400px) {
+	
+}

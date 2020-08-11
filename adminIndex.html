@@ -1,0 +1,868 @@
+<!Doctype HTML>
+<Html Lang="En">
+	
+	<!--Head Begins-->
+	<Head>
+		
+		<!-- Meta -->
+		<meta name="theme-color" content="">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:description" name="description" content="PAW">
+		<meta property="og:author" name="author" content="Aston Gemmy O'naire">
+		<meta property="og:keywords" name="keywords" content=""/>
+		<meta property="og:image" name="image" content="/Images/Thumbnails/Thumbnail.webp"/>
+		<title> Administrator Home Page | PAW </title>
+		<!-- Meta Ends -->
+		
+		<!-- core CSS -->
+		<link type="text/css" href="Css/all.css" rel="stylesheet">
+		<link type="text/css" href="Css/fonts.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW_responsive.css" rel="stylesheet">
+		<link type="text/css" href="Css/PAW_color.css" rel="stylesheet">
+		<link type="text/css" href="Css/animate.css" rel="stylesheet">
+		<link type="text/css" href="Css/hamburgers.css" rel="stylesheet">
+		<!-- Core CSS Ends -->
+		
+		<!-- Site Icon -->
+		<link rel="shortcut icon" href="Images/Favicon/PAW.jpg">
+		<!-- Site Icon Ends -->
+    
+	</Head>
+	<!--Head Ends-->
+	
+	<!-- Body -->
+	<body>
+
+		<div id="admin-grid--index">
+
+			<div id="admin-header--index">
+				<img src="Images/Favicon/PAW.jpg" width="100%">
+				<h1 class="">PAW Administrator Page</h1>
+			</div>
+
+			<div id="admin-sidebar--index">
+				
+				<div id="sidebar-header">
+					<span id="header-text">Functionalities</span>
+					<span id="close-btn"><i class="fa fa-times"></i></span>
+				</div>
+
+				<div id="sidebar-container">
+					
+					<ol id="data-uploads">
+						<div class="item--title">
+							<h3>Upload</h3>
+							<i class="fa fa-upload"></i>
+						</div>
+						<li id="data-content">
+							<a href="#upload--message">Messages</a>
+							<a href="#upload--announcement">Announcements</a>
+							<a href="#upload--video">Videos</a>
+						</li>
+
+					</ol>
+
+					<ol id="data-edit">
+						<div class="item--title">
+							<h3>Edit</h3>
+							<i class="fa fa-edit"></i>
+						</div>
+						<li id="data-content">
+							<a href="#edit--message">Message</a>
+							<a href="#edit--announcement">Announcements</a>
+							<a href="#edit--video">Videos</a>
+						</li>
+
+					</ol>
+
+					<ol id="data-delete">
+						<div class="item--title">
+							<h3>Delete</h3>
+							<i class="fa fa-trash-alt"></i>
+						</div>
+						<li id="data-content">
+							<a href="#delete--message">Message</a>
+							<a href="#delete--announcement">Announcements</a>
+							<a href="#delete--video">Videos</a>
+						</li>
+
+					</ol>
+
+				</div>
+
+				<div class="sidebar--footer">
+					<a href="index.html">Home</a>
+					<a href="index.html">About Us</a>
+					<a href="index.html">Contact Us</a>
+					<a href="index.html">Donate</a>
+					<a href="index.html">Support</a>
+					<a href="index.html">Feedback</a>
+				</div>
+
+			</div>
+
+			<div id="admin-main--index">
+				
+				<div id="data-upload--area">
+					
+					<div id="upload--message">
+						
+						<div id="data-header--area">Upload Messages</div>
+
+						<div class="file-upload--area" id="file-upload-area--message">
+							
+							<div class="upload-area--clear" id="message-upload-area--clear">
+								<button class="" id="message-upload-file--length"></button>
+								<button class="" id="message-upload-file--size"></button>
+								<button class="" id="message-upload-file--clear">Clear files</button>
+							</div>
+							<div class="help" id="message-help">Drag and drop or click to add video files here</div>
+							<div id="file-data--grid"></div>
+							
+						</div>
+
+						<div id="data-fields--area">
+
+							<form action="" id="upload-action-message" method="post">
+
+								<!-- Background Input field for file uploads -->
+								<input type="file" class="hidden-file-field" name="message-upload-field" id="message-upload-field" multiple>
+
+								<label>Speaker</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<label>Title</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<label>Date</label>
+								<input type="date" name="date" class="nativeDatePicker" id="">
+								
+								<div class="fallbackDatePicker">
+									
+									<span>
+										<label for="date-day">Day:</label>
+										<select id="date-day" class="date-day" name="date-day"></select>
+								 	</span>
+									  
+									<span>
+
+										<label for="date-month">Month:</label>
+										<select id="date-month" class="date-month" name="date-month">
+											<option selected>January</option>
+											<option>February</option>
+											<option>March</option>
+											<option>April</option>
+											<option>May</option>
+											<option>June</option>
+											<option>July</option>
+											<option>August</option>
+											<option>September</option>
+											<option>October</option>
+											<option>November</option>
+											<option>December</option>
+										</select>
+									 
+									</span>
+									  
+									<span>
+										<label for="date-year">Year:</label>
+										<select id="date-year" class="date-year" name="date-year"></select>
+									</span>
+
+								</div>
+
+								<div id="data-button--area">
+									<button type="submit" name="upload-btn" id="upload-message-btn">Upload</button>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+					<div id="upload--announcement">
+						
+						<div id="data-header--area">Uploads Announcements</div>
+
+						<div id="data-hint--area">
+							<h2>Hints</h2>
+							<p>
+								Announcements text should not be more than 250 characters
+							</p>
+						</div>
+
+						<div id="data-fields--area">
+
+							<form action="" id="upload-action-announcement" method="post">
+
+								<label>Title</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<label>Content</label>
+								<textarea name="item-name" id="item-name"></textarea>
+
+								<label>Date</label>
+								<input type="date" name="item-name" id="item-name">
+
+								<label>Venue</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<div id="data-button--area">
+									<button type="submit" name="upload-btn" id="upload-announcement-btn">Upload</button>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+					<div id="upload--video">
+						
+						<div id="data-header--area">Upload videos</div>
+
+						<div class="file-upload--area">
+							<div class="upload-area-clear">
+								<button class="button text-white" id="upload-file-clear">Clear files</button>
+							</div>
+							<div class="help">Drag and drop or click to add video files here</div>
+						</div>
+
+						<div id="data-fields--area">
+
+							<form action="" id="upload-action-video" method="post">
+
+								<label>Title</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<label>Artiste / Producer</label>
+								<input type="text" name="item-name" id="item-name">
+
+								<label>Release Date</label>
+								<input type="date" name="item-name" id="item-name">
+
+								<div id="data-button--area">
+									<button type="submit" name="upload-btn" id="upload-video-btn">Upload</button>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+					
+				</div>
+
+				<div id="data-edit--area">
+    
+					<div id="edit--message">
+					
+						<div id="data-header--area">Edit Messages</div>
+				
+						<div id="file-edit--area">
+
+							<ul id="edit-message-control">
+
+								<li data-title="This is title for first items to be edited in this section" data-speaker="Bishop Osutum" data-date="2012-02-29">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for first items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Osutum</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>
+								
+								<li data-title="This is title for second items to be edited in this section" data-speaker="Bishop Isaiah" data-date="2002-02-19">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for second items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Isaiah</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for third items to be edited in this section" data-speaker="Bishop Benson" data-date="2015-12-12">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for third items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Benson</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for fourth items to be edited in this section" data-speaker="Bishop Nkanang" data-date="2019-02-01">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for fourth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Nkanang</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for fifth items to be edited in this section" data-speaker="Bishop James" data-date="2019-05-10">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for fifth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop James</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for sixth items to be edited in this section" data-speaker="Bishop Isaac" data-date="2020-01-03">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for sixth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Isaac</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for seventh items to be edited in this section" data-speaker="Bishop George" data-date="2019-02-05">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for seventh items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop George</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+							</ul>
+
+						</div>
+				
+						<div id="data-fields--area">
+				
+							<form action="" id="edit-message-control-form" method="post">
+				
+								<label>Title</label>
+								<input type="text" name="title" id="title" value="">
+				
+								<label>Speaker</label>
+								<input type="text" name="speaker" id="speaker" value="">
+				
+								<label>Date</label>
+								<input type="date" value="" required-pattern="\d{4}-\d{2}-\d{2}" name="date" id="date" value="">
+				
+								<div id="data-button--area">
+									<button type="submit" name="edit-message-btn" id="edit-message-btn">Edit</button>
+								</div>
+				
+							</form>
+				
+						</div>
+				
+					</div>
+				
+					<div id="edit--announcement">
+						
+						<div id="data-header--area">Edit Announcements</div>
+				
+						<div id="data-hint--area">
+							<h2>Hints</h2>
+							<p>
+								Announcements text should not be more than 250 characters
+							</p>
+						</div>
+				
+						<div id="data-fields--area">
+				
+							<form action="" id="edit-action-announcement" method="post">
+				
+								<label>Title</label>
+								<input type="text" name="item-name" id="item-name">
+				
+								<label>Content</label>
+								<textarea name="item-name" id="item-name"></textarea>
+				
+								<label>Date</label>
+								<input type="date" name="item-name" id="item-name">
+				
+								<label>Venue</label>
+								<input type="text" name="item-name" id="item-name">
+				
+								<div id="data-button--area">
+									<button type="submit" name="edit-announcement-btn" id="edit-announcement-btn">Edit</button>
+								</div>
+				
+							</form>
+				
+						</div>
+				
+					</div>
+				
+					<div id="edit--video">
+						
+						<div id="data-header--area">Edit videos</div>
+				
+						<div id="file-edit--area">
+								
+							<ul id="edit-video-control">
+								
+								<li data-title="This is title for first items to be edited in this section" data-artiste="Bishop Osutum" data-date="2012-02-29">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for first items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Osutum</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>
+								
+								<li data-title="This is title for second items to be edited in this section" data-artiste="Bishop Isaiah" data-date="2002-02-19">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for second items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Isaiah</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for third items to be edited in this section" data-artiste="Bishop Benson" data-date="2015-12-12">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for third items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Benson</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for fourth items to be edited in this section" data-artiste="Bishop Nkanang" data-date="2019-02-01">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for fourth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Nkanang</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for fifth items to be edited in this section" data-artiste="Bishop James" data-date="2019-05-10">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for fifth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop James</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for sixth items to be edited in this section" data-artiste="Bishop Isaac" data-date="2020-01-03">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for sixth items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop Isaac</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>							
+								
+								<li data-title="This is title for seventh items to be edited in this section" data-artiste="Bishop George" data-date="2019-02-05">
+									<img src="Images/Leaders/Leader 1.jpg" alt="" width="100%">
+									<div class="edit-meta--area">
+										<a href="#">This is title for seventh items to be edited in this section</a>
+										<div class="edit--meta">
+											<div class="edit--speaker">Bishop George</div>
+											<div class="edit--size">2.53MB</div>
+											<div class="edit--date">02/05/2019</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+							
+						</div>
+				
+						<div id="data-fields--area">
+				
+							<form action="" id="edit-video-control-form" method="post">
+				
+								<label>Title</label>
+								<input type="text" name="title" id="title">
+				
+								<label>Artiste / Producer</label>
+								<input type="text" name="artiste" id="artiste">
+				
+								<label>Release Date</label>
+								<input type="date" name="date" id="date">
+				
+								<div id="data-button--area">
+									<button type="submit" name="edit-video-btn" id="edit-video-btn">Edit</button>
+								</div>
+				
+							</form>
+				
+						</div>
+				
+					</div>
+					
+				</div>	
+				
+				<div id="data-delete--area">
+
+					<div id="delete--message">
+					
+						<div id="data-delete--header">Delete Messages</div>
+				
+						<div class="data-delete--body" id="delete-selection--message">
+
+							<ul data-selector-action="delete--message" id="select-all-message">
+								<li><input type="checkbox"></li>
+								<li>ID</li>
+								<li><a href="#">Item Name</a></li>
+								<li>Size</li>
+								<li>Date</li>
+								<li>Format</li>
+								<li>Action</li>
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_1">
+								<li><input type="checkbox"></li>
+								<li>1</li>
+								<li><a href="#">Message on the mount</a></li>
+								<li>2.49MB</li>
+								<li>11/07/2020</li>
+								<li>MP3</li>
+								<li><button data-single-action="delete--message" data-action-key="message_1">Delete</button></li>								
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_2">
+								<li><input type="checkbox"></li>
+								<li>2</li>
+								<li><a href="#">The sea of Gallilee</a></li>
+								<li>8.10MB</li>
+								<li>06/09/2019</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--message" data-action-key="message_2">Delete</button></li>							
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_3">
+								<li><input type="checkbox"></li>
+								<li>3</li>
+								<li><a href="#">Moses and the red Sea</a></li>
+								<li>6.42MB</li>
+								<li>01/02/2021</li>
+								<li>MP3</li>
+								<li><button data-single-action="delete--message" data-action-key="message_3">Delete</button></li>			
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_4">
+								<li><input type="checkbox"></li>
+								<li>4</li>
+								<li><a href="#">Miracles of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP3</li>
+								<li><button data-single-action="delete--message" data-action-key="message_4">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_5">
+								<li><input type="checkbox"></li>
+								<li>5</li>
+								<li><a href="#">Miracles of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--message" data-action-key="message_5">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_6">
+								<li><input type="checkbox"></li>
+								<li>6</li>
+								<li><a href="#">Miracles of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP3</li>
+								<li><button data-single-action="delete--message" data-action-key="message_6">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_7">
+								<li><input type="checkbox"></li>
+								<li>7</li>
+								<li><a href="#">Miracles of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--message" data-action-key="message_7">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--message" id="message_8">
+								<li><input type="checkbox"></li>
+								<li>8</li>
+								<li><a href="#">Miracles of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP3</li>
+								<li><button data-single-action="delete--message" data-action-key="message_8">Delete</button></li>	
+							</ul>	
+
+						</div>
+
+						<div class="data-delete--footer" id="delete-action--message">
+							<div>
+								<button class="action" data-bulk-action="delete--message" id="delete-selected--message">Delete Selected</button>
+							</div>
+							<div data-update-action="delete--message" id="delete-message--count"></div>
+							<div data-response-action="delete--message" id="delete-message--feedback"></div>
+						</div>
+				
+					</div>
+					
+					<div id="delete--announcement">
+				
+						<div id="data-delete--header">Delete Announcements</div>
+				
+						<div class="data-delete--body" id="delete-control--announcement" data-announcement>
+
+							<ul data-selector-action="delete--announcement" id="select-all-announcement">
+								<li><input type="checkbox"></li>
+								<li>ID</li>
+								<li><a href="#">Item Name</a></li>
+								<li>Date</li>
+								<li>Action</li>						
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_1">
+								<li><input type="checkbox"></li>
+								<li>1</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>11/07/2020</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_1">Delete</button></li>								
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_2">
+								<li><input type="checkbox"></li>
+								<li>2</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>06/09/2019</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_2">Delete</button></li>							
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_3">
+								<li><input type="checkbox"></li>
+								<li>3</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>01/02/2021</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_3">Delete</button></li>			
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_4">
+								<li><input type="checkbox" data-control-value="delete-selected--announcement" id="sel_4"></li>
+								<li>4</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>12/10/2018</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_4">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_5">
+								<li><input type="checkbox"></li>
+								<li>5</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>12/10/2018</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_5">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_6">
+								<li><input type="checkbox"></li>
+								<li>6</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>12/10/2018</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_6">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_7">
+								<li><input type="checkbox"></li>
+								<li>7</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>12/10/2018</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_7">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--announcement" id="announcement_8">
+								<li><input type="checkbox"></li>
+								<li>8</li>
+								<li><a href="#">Mass Choir rehearsals on the 26th of July 2020</a></li>
+								<li>12/10/2018</li>
+								<li><button data-single-action="delete--announcement" data-action-key="announcement_8">Delete</button></li>	
+							</ul>
+	
+
+						</div>
+
+						<div class="data-delete--footer" id="delete-action--announcement">
+							<div>
+								<button class="action" data-bulk-action="delete--announcement" id="delete-selected--announcement">Delete Selected</button>
+							</div>
+							<div data-update-action="delete--announcement" id="delete-announcement--count"></div>
+							<div data-response-action="delete--announcement" id="delete-announcement--feedback"></div>
+						</div>
+				
+					</div>
+
+
+					<div id="delete--video">
+				
+						<div id="data-delete--header">Delete Videos</div>
+				
+						<div class="data-delete--body" id="delete-control--video" data-announcement>
+
+							<ul data-selector-action="delete--video" id="select-all-video">
+								<li><input type="checkbox"></li>
+								<li>ID</li>
+								<li><a href="#">Item Name</a></li>
+								<li>Size</li>
+								<li>Date</li>
+								<li>Format</li>
+								<li>Action</li>						
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_1">
+								<li><input type="checkbox"></li>
+								<li>1</li>
+								<li><a href="#">Mass Choir convention record</a></li>
+								<li>2.49MB</li>
+								<li>11/07/2020</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_1">Delete</button></li>								
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_2">
+								<li><input type="checkbox"></li>
+								<li>2</li>
+								<li><a href="#">The Porter's House</a></li>
+								<li>8.10MB</li>
+								<li>06/09/2019</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_2">Delete</button></li>							
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_3">
+								<li><input type="checkbox"></li>
+								<li>3</li>
+								<li><a href="#">Balm in Gilead</a></li>
+								<li>6.42MB</li>
+								<li>01/02/2021</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_3">Delete</button></li>			
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_4">
+								<li><input type="checkbox"></li>
+								<li>4</li>
+								<li><a href="#">Miracles Walker</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_4">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_5">
+								<li><input type="checkbox"></li>
+								<li>5</li>
+								<li><a href="#">Mighty Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_5">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_6">
+								<li><input type="checkbox"></li>
+								<li>6</li>
+								<li><a href="#">Wonders Working God</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_6">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_7">
+								<li><input type="checkbox"></li>
+								<li>7</li>
+								<li><a href="#">The Name of Jesus</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_7">Delete</button></li>
+							</ul>
+
+							<ul data-selector-action="delete--video" id="video_8">
+								<li><input type="checkbox"></li>
+								<li>8</li>
+								<li><a href="#">For your Glory</a></li>
+								<li>9.21MB</li>
+								<li>12/10/2018</li>
+								<li>MP4</li>
+								<li><button data-single-action="delete--video" data-action-key="video_8">Delete</button></li>	
+							</ul>
+	
+
+						</div>
+
+						<div class="data-delete--footer" id="delete-action--video">
+							<div>
+								<button class="action" data-bulk-action="delete--video" id="delete-selected--video">Delete Selected</button>
+							</div>
+							<div data-update-action="delete--video" id="delete-video--count"></div>
+							<div data-response-action="delete--video" id="delete-video--feedback"></div>
+						</div>
+				
+					</div>
+					
+				</div>
+
+			</div>
+
+			<div id="admin-footer--index">
+				Designed by Algrith
+			</div>
+
+		</div>
+
+    </body>
+	<!-- Body Ends -->
+	
+	<script type="text/javascript" src="Js/admin.js"></script>
+	<script type="text/javascript" src="Js/upload.js"></script>
+	<script type="text/javascript" src="Js/edit.js"></script>
+	<script type="text/javascript" src="Js/delete.js"></script>
+	<script type="text/javascript" src="Js/todayDate.js"></script>
+
+</Html>
