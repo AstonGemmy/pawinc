@@ -213,36 +213,43 @@ document.querySelector(".hamburger").addEventListener("click", function() {
 	}
 });
 
-(function () {
-    function start_marquee() {
-        function go() {
-            i = i < width ? i + step : 1;
-            m.style.marginLeft = -i + 'px';
+function handleMarquee() {
+        const marquee = document.querySelectorAll('.marquee-content');
+        let speed = 4;
+        let lastScrollPos = 0;
+        let timer;
+        marquee.forEach(function(el) {
+          const container = el.querySelector('.inner');
+          const content = el.querySelector('.inner > *');
+          //Get total width
+          const elWidth = content.offsetWidth;
+          //Duplicate content
+          let clone = content.cloneNode(true);
+          container.appendChild(clone);
+          let progress = 1;
+          function loop() {
+            progress = progress - speed;
+            if(progress <= elWidth * -1) {
+              progress = 0;
+            }
+            container.style.transform = 'translateX(' + progress + 'px)';
+            container.style.transform += 'skewX(' + speed * 0.4 + 'deg)';
+            window.requestAnimationFrame(loop);
+          }
+          loop();
+        });
+        window.addEventListener('scroll', function() {
+          const maxScrollValue = 12;
+          const newScrollPos = window.scrollY;
+          let scrollValue = newScrollPos - lastScrollPos;
+          if(scrollValue > maxScrollValue) scrollValue = maxScrollValue;
+          else if(scrollValue < -maxScrollValue) scrollValue = -maxScrollValue;
+          speed = scrollValue;
+          clearTimeout(timer);
+          timer = setTimeout(handleSpeedClear, 10);
+        });
+        function handleSpeedClear() {
+          speed = 4;
         }
-        var i = 0,
-            step = 3,
-            space = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-        var m = document.getElementById('marquee');
-        var t = m.innerHTML; //text
-        m.innerHTML = t + space;
-        m.style.position = 'absolute'; // http://stackoverflow.com/questions/2057682/determine-pixel-length-of-string-in-javascript-jquery/2057789#2057789
-        var width = (m.clientWidth + 1);
-        m.style.position = '';
-        m.innerHTML = t + space + t + space + t + space + t + space + t + space + t + space + t + space;
-        if (m.addEventListener) {
-            m.addEventListener('mouseenter', function () {
-                step = 0;
-            }, false);
-            m.addEventListener('mouseleave', function () {
-                step = 3;
-            }, false);
-        }
-        var x = setInterval(go, 50);
-    }
-
-    if (window.addEventListener) {
-        window.addEventListener('load', start_marquee, false);
-    } else if (window.attachEvent) { //IE7-8
-        window.attachEvent('onload', start_marquee);
-    }
-})();
+      };
+      handleMarquee();
