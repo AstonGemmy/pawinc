@@ -123,11 +123,11 @@
 		justify-content:flex-start;
 		align-content:center;
 		letter-spacing: 2px;
-		animation: marquee 30s linear infinite forwards;
-		-webkit-animation: marquee 30s linear infinite forwards;
-		-moz-animation: marquee 30s linear infinite forwards;
-		-ms-animation: marquee 30s linear infinite forwards;
-		-o-animation: marquee 30s linear infinite forwards;
+		/*animation: marquee 30s linear infinite forwards;*/
+		/*-webkit-animation: marquee 30s linear infinite forwards;*/
+		/*-moz-animation: marquee 30s linear infinite forwards;*/
+		/*-ms-animation: marquee 30s linear infinite forwards;*/
+		/*-o-animation: marquee 30s linear infinite forwards;*/
 	}
 
 	.marquee-content:hover {
