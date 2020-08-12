@@ -123,7 +123,7 @@
 		position:relative;
 		justify-content:flex-start;
 		align-content:center;
-		letter-spacing: 2px;background:green;
+		letter-spacing: 2px;background:cyan;
 		animation: marquee 30s linear infinite forwards;
 		-webkit-animation: marquee 10s linear infinite forwards;
 		-moz-animation: marquee 30s linear infinite forwards;
@@ -136,8 +136,8 @@
 	}
 
 	@keyframes marquee {
-		0% {transform:translateX(100%);}
-		100% {transform:translateX(-100%);}
+		0% {margin-left:100%;}
+		100% {margin-left:-100%;}
 	}
 	
 	.marquee-close-btn {
