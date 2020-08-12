@@ -58,8 +58,8 @@
 }
 
 .hamburger-inner::before, .hamburger-inner::after {content: "";}
-.hamburger-inner::before {top: -8px;left: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;}
-.hamburger-inner::after {top: 8px;right: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;}
+.hamburger-inner::before {top: -5px;left: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;}
+.hamburger-inner::after {top: 5px;right: 0;transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;}
 
 
 /*
