@@ -117,13 +117,13 @@
 	}
 
 	.marquee-content {
-		min-width:100%;
+		width:auto;
 		display:flex;
 		white-space: nowrap;
 		position:relative;
 		justify-content:flex-start;
 		align-content:center;
-		letter-spacing: 2px;
+		letter-spacing: 2px;background:green;
 		animation: marquee 10s linear infinite forwards;
 		-webkit-animation: marquee 10s linear infinite forwards;
 		-moz-animation: marquee 10s linear infinite forwards;
