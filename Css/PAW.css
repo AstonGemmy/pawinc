@@ -118,7 +118,8 @@
 		width:100%;
 		display:flex;
 		position:relative;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
+                white-space: nowrap;
 		/*animation: marquee 30s linear infinite forwards;*/
 		/*-webkit-animation: marquee 10s linear infinite forwards;*/
 		/*-moz-animation: marquee 30s linear infinite forwards;*/
