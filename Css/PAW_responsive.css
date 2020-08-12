@@ -1,7 +1,7 @@
 /* O'naire Corporation.CSS 4.10 April 2018 by Aston Gemmy */
 @media screen and (max-width: 1081px) {
 	.main-caption-cover {width:100%;padding:0px 16px;}
-	.footer-section-one, .footer-top-section {flex-wrap:wrap;justify-content:space-between;}
+	.footer-section-one, .footer-top-section {flex-wrap:wrap;justify-content:space-between;padding:0px 8px;}
 }
 
 @media screen and (max-width: 901px) {
@@ -111,7 +111,7 @@
 	.event-item:nth-child(even) .event-date {left:auto;right:0;}
 	
 	.footer-container {width:100%}
-	.top-section-grid {width:100%;}
+	.top-section-grid {width:100%;padding:20px 10px;}
 	.top-section-header {padding:8px 8px;font-size:18px;}
 	
 
