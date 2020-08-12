@@ -117,7 +117,7 @@
 	}
 
 	.marquee-content {
-		width:100%;
+		min-width:100%;
 		display:flex;
 		white-space: nowrap;
 		position:relative;
