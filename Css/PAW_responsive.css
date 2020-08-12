@@ -1,7 +1,7 @@
 /* O'naire Corporation.CSS 4.10 April 2018 by Aston Gemmy */
 @media screen and (max-width: 1081px) {
 	.main-caption-cover {width:100%;padding:0px 16px;}
-	.footer-section-one {flex-wrap:wrap;justify-content:space-between;}
+	.footer-section-one, .footer-top-section {flex-wrap:wrap;justify-content:space-between;}
 }
 
 @media screen and (max-width: 901px) {
