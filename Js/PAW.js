@@ -214,13 +214,13 @@ document.querySelector(".hamburger").addEventListener("click", function() {
 });
 
 function handleMarquee() {
-        const marquee = document.querySelectorAll('.marquee-content');
+        const marquee = document.querySelectorAll('.marquee');
         let speed = 4;
         let lastScrollPos = 0;
         let timer;
         marquee.forEach(function(el) {
-          const container = el.querySelector('.inner');
-          const content = el.querySelector('.inner > *');
+          const container = el.querySelector('.marquee-content');
+          const content = el.querySelector('.marquee-content > *');
           //Get total width
           const elWidth = content.offsetWidth;
           //Duplicate content
