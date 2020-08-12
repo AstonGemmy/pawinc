@@ -238,7 +238,7 @@ function handleMarquee() {
           }
           loop();
         });
-        window.addEventListener('scroll', function() {
+        /**window.addEventListener('scroll', function() {
           const maxScrollValue = 12;
           const newScrollPos = window.scrollY;
           let scrollValue = newScrollPos - lastScrollPos;
@@ -247,7 +247,7 @@ function handleMarquee() {
           speed = scrollValue;
           clearTimeout(timer);
           timer = setTimeout(handleSpeedClear, 10);
-        });
+        });**/
         function handleSpeedClear() {
           speed = 1.5;
         }
