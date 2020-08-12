@@ -117,12 +117,10 @@
 	}
 
 	.marquee-content {
-		width:auto;
+		width:100%;
 		display:flex;
 		white-space: nowrap;
 		position:relative;
-		justify-content:flex-start;
-		align-content:center;
 		letter-spacing: 2px;
 		/*animation: marquee 30s linear infinite forwards;*/
 		/*-webkit-animation: marquee 10s linear infinite forwards;*/
@@ -130,6 +128,10 @@
 		/*-ms-animation: marquee 30s linear infinite forwards;*/
 		/*-o-animation: marquee 30s linear infinite forwards;*/
 	}
+
+        .marquee-content > * {
+            white-space: nowrap;
+        }
 
 	.marquee-content:hover {
 		animation-play-state: paused;
