@@ -215,7 +215,7 @@ document.querySelector(".hamburger").addEventListener("click", function() {
 
 function handleMarquee() {
         const marquee = document.querySelectorAll('.marquee');
-        let speed = 4;
+        let speed = 0.5;
         let lastScrollPos = 0;
         let timer;
         marquee.forEach(function(el) {
@@ -249,7 +249,7 @@ function handleMarquee() {
           timer = setTimeout(handleSpeedClear, 10);
         });
         function handleSpeedClear() {
-          speed = 4;
+          speed = 0.5;
         }
       };
       handleMarquee();
