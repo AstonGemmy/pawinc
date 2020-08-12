@@ -86,6 +86,7 @@ fetch('users.json')
 			slidesElem.className = "slides";
 			var imgElem = document.createElement("img");
 			imgElem.className = "responsiveImage";
+			imgElem.alt = data[x].adminPic;
 			imgElem.dataset.src = "Images/Slides/" + data[x].adminPic;
 			var slideText = document.createElement("div");
 			slideText.className = "slide-text";
