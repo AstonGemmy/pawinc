@@ -88,7 +88,7 @@
 
 	.marquee:after, .marquee::before {
 		z-index:2;
-		position: absolute;;
+		position: absolute;
 		top:0;
 		width:50px;
 		height:30px;
@@ -120,6 +120,7 @@
 		width:auto;
 		display:flex;
 		white-space: nowrap;
+                position:relative;
 		justify-content:flex-start;
 		align-content:center;
 		letter-spacing: 2px;
