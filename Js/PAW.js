@@ -237,7 +237,7 @@ document.querySelector(".hamburger").addEventListener("click", function() {
                 step = 3;
             }, false);
         }
-        var x = setInterval(go, 200);
+        var x = setInterval(go, 50);
     }
 
     if (window.addEventListener) {
