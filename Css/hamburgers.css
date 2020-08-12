@@ -35,8 +35,8 @@
 .hamburger.is-active .hamburger-inner::after {background-color: rgb(255, 255, 255);}
 
 .hamburger-box {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: block;
   position: relative;
 }
