@@ -1,14 +1,14 @@
 {
-  "short_name": "Big Bizzy",
-  "name": "Big Bizzy",
+  "short_name": "PAW Inc",
+  "name": "PAW Inc",
   "icons": [
     {
-      "src": "Images/Thumbnails/Thumbnail.png",
+      "src": "Images/Thumbnails/Thumbnail.webp",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "theme_color": "#88278C",
+  "theme_color": "#0061A6",
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "portrait"

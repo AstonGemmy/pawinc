@@ -12,17 +12,20 @@ function clearUploadArea() {
 	document.getElementById('message-upload-area--clear').style.display = "none";
 	document.getElementById("message-help").style.display = "flex";
 	document.getElementById("message-help").textContent = ("Drag and drop or click to add video files here");
+	document.getElementById("file-upload-area--message").style.borderColor = "";
 }
 
 // Prepares files for upload
-function prepareUpload(files, filesCount) {		
+function prepareUpload(files, filesCount) {
+	//	Give visual indication for file entry into upload region
+	document.getElementById("file-upload-area--message").style.borderColor = "rgb(0, 214, 36)";
 	// Display clear button after files have been selected
 	document.getElementById('message-upload-area--clear').style.display = "flex";
 	// Append selected files and attributes to upload object
 	if (objectLength(selectedFiles__Object) == 0) { // Checks if selectedFiles__Object object is empty
 		// If yes, iterate through selectedFiles and push each to selectedFiles__Object
 		for (let x = 0; x < filesCount; x++) {
-			let entry = {"name": files[x].name, "size": files[x].size, "src": "Images/Favicon/PAW.jpg"};
+			let entry = {"name": files[x].name, "size": files[x].size, "src": "Images/Logo/PAW.webp"};
 			selectedFiles__Object.push(entry);
 		}
 	} else { // If selectedFiles__Object has elements in it, ensure 
@@ -92,7 +95,6 @@ function prepareUpload(files, filesCount) {
 		selectedFiles__Length = selectedFiles.length;
 		// Run prepareUpload function
 		prepareUpload(selectedFiles, selectedFiles__Length);
-		
 	});
 	
 	// Simulate a click on file input selector on upload area div click

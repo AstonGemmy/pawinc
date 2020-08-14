@@ -34,6 +34,8 @@
 	.header {padding:5px;}	
 	.brand-name {font-size:2rem;height:auto;text-align:center;}	
 	.brand-name-on-scroll {font-size:1.5rem;}
+
+	.slide-menu a {margin:10px auto;display:block;width:100%;}
 	
 
     #slide-cover {height:50vh;}
@@ -86,6 +88,7 @@
 		background-size:100%;
 		background-position: normal;
 	}
+	.testimonies .main-caption {color:black;}	
 	.testimonies-footer {width:100%;padding:16px 16px;}	
 	.testimonies-cover {width:85%;margin:0px auto;}	
 	.testimonies-container {min-width:calc(100% - 10px);margin:10px 10px;background:#f0f0f0;}	
@@ -123,7 +126,8 @@
 		background:url("../Images/Assets/Excerpts/Excerpts mobile.jpeg");
 		background-attachment: normal;
         background-size:100%;
-	}	
+	}
+	.excerpts .main-caption {color:black;}	
 	#excerpts-left {
 		color:#FFFFFF;
 		background:linear-gradient(to right, rgba(205,205,205,0.7), transparent);
