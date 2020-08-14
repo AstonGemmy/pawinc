@@ -4,6 +4,7 @@
 	font-display: auto;
 	src: url("../webfonts/Raleway/Raleway-Bold.woff2");
 	src: url("../webfonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../webfonts/Raleway/Raleway-Regular.woff") format("woff"), url("../webfonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../webfonts/Raleway/Raleway-Regular.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -11,6 +12,7 @@
 	font-style: normal;
 	font-display: auto;
 	src: url("../webfonts/Dosis/Dosis-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -18,6 +20,7 @@
 	font-style: normal;
 	font-display: auto;
 	src: url("../webfonts/Comfortaa/Comfortaa-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Comfortaa/Comfortaa-VariableFont_wght.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -26,6 +29,7 @@
 	font-display: auto;
 	src: url("../webfonts/Manrope/Manrope-VariableFont_wght.woff2");
 	src: url("../webfonts/Manrope/Manrope-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Manrope/Manrope-VariableFont_wght.woff2") format("woff2"), url("../webfonts/Manrope/Manrope-VariableFont_wght.woff") format("woff"), url("../webfonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Manrope/Manrope-VariableFont_wght.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -34,6 +38,7 @@
 	font-display: auto;
 	src: url("../webfonts/Roboto/Roboto-Regular.woff2");
 	src: url("../webfonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../webfonts/Roboto/Roboto-Regular.woff") format("woff"), url("../webfonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../webfonts/Roboto/Roboto-Regular.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -42,6 +47,7 @@
 	font-display: auto;
 	src: url("../webfonts/Nunito/Nunito-Regular.woff2");
 	src: url("../webfonts/Nunito/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Nunito/Nunito-Regular.woff2") format("woff2"), url("../webfonts/Nunito/Nunito-Regular.woff") format("woff"), url("../webfonts/Nunito/Nunito-Regular.ttf") format("truetype"), url("../webfonts/Nunito/Nunito-Regular.svg#fontawesome") format("svg");
+	font-display: swap
 }
 
 @font-face {
@@ -49,4 +55,5 @@
 	font-style: normal;
 	font-display: auto;
 	src: url("../webfonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../webfonts/Montserrat/Montserrat-Medium.ttf") format("truetype"), url("../webfonts/Montserrat/Montserrat-Medium.svg#fontawesome") format("svg");
+	font-display: swap
 }
