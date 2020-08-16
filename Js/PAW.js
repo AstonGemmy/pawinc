@@ -8,77 +8,6 @@ const header = document.getElementById("header");
 const brand_name = document.getElementById("brand-name");
 let targetCount;
 
-//	Alter header styles on scroll
-const mutateHeader = () => {		
-	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-	if (document.body.scrollTop > 80 || documentObject.scrollTop > 80) {
-		header.classList.add("header-on-scroll");
-		brand_name.classList.add("brand-name-on-scroll");
-		hamburger.classList.add("hamburger-on-scroll");
-	} else {
-		header.classList.remove("header-on-scroll");
-		brand_name.classList.remove("brand-name-on-scroll");
-		hamburger.classList.remove("hamburger-on-scroll");
-	}
-
-	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-	if (document.body.scrollTop > 200 || documentObject.scrollTop > 200) {
-		backToTop.style.display = "block";
-	} else {
-		backToTop.style.display = "none";
-	}
-
-}
-
-//	Scroller options object
-const scrollerOptions = {
-	"testimonies":[
-		"testimonies-container",
-		"testimonies-cover",
-		3,
-		1
-	],
-	
-	"excerpts":[
-		"excerpts-slide",
-		"excerpts-slide",
-		4,
-		1
-	],
-};
-
-Object.keys(scrollerOptions).forEach((optionKey, index) => {
-	document.getElementById(optionKey).addEventListener("click", option => {
-		let window__width = documentObject.clientWidth;
-		if (window__width < 702) {
-			targetCount = scrollerOptions[optionKey][3];
-		} else {
-			targetCount = scrollerOptions[optionKey][2];
-		}
-		rootNode = optionKey;
-		controlNode = scrollerOptions[optionKey][0];
-		actionNode = scrollerOptions[optionKey][1];
-		targetNode = option.target.id || option.target.parentNode.id;
-		scroll_API(rootNode,controlNode,actionNode,targetNode,targetCount);
-	});
-});
-
-function scroll_API(rootNode,controlNode,actionNode,targetNode,targetCount) {
-	//	Testimonies section directional controls
-	const item__width = document.getElementById(controlNode).clientWidth;
-	if (targetNode.includes("left")) {
-		document.getElementById(actionNode).scrollBy({left:(-item__width * targetCount), behavior:'smooth'});
-	} else if (targetNode.includes("right")) {
-		document.getElementById(actionNode).scrollBy({left:(item__width * targetCount), behavior:'smooth'});
-	}
-}	
-
-//	Handles on scroll events
-window.addEventListener('scroll', perform => {
-	mutateHeader();
-	//fadeHeader();		
-});
-
 fetch('users.json')
 	.then(response => response.json())
 	.then(function(data) {
@@ -201,6 +130,77 @@ fetch('users.json')
 	.catch(err => console.log(err))
 ;
 
+//	Alter header styles on scroll
+const mutateHeader = () => {		
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+	if (document.body.scrollTop > 80 || documentObject.scrollTop > 80) {
+		header.classList.add("header-on-scroll");
+		brand_name.classList.add("brand-name-on-scroll");
+		hamburger.classList.add("hamburger-on-scroll");
+	} else {
+		header.classList.remove("header-on-scroll");
+		brand_name.classList.remove("brand-name-on-scroll");
+		hamburger.classList.remove("hamburger-on-scroll");
+	}
+
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+	if (document.body.scrollTop > 200 || documentObject.scrollTop > 200) {
+		backToTop.style.display = "block";
+	} else {
+		backToTop.style.display = "none";
+	}
+
+}
+
+//	Scroller options object
+const scrollerOptions = {
+	"testimonies":[
+		"testimonies-container",
+		"testimonies-cover",
+		3,
+		1
+	],
+	
+	"excerpts":[
+		"excerpts-slide",
+		"excerpts-slide",
+		4,
+		1
+	],
+};
+
+Object.keys(scrollerOptions).forEach((optionKey, index) => {
+	document.getElementById(optionKey).addEventListener("click", option => {
+		let window__width = documentObject.clientWidth;
+		if (window__width < 702) {
+			targetCount = scrollerOptions[optionKey][3];
+		} else {
+			targetCount = scrollerOptions[optionKey][2];
+		}
+		rootNode = optionKey;
+		controlNode = scrollerOptions[optionKey][0];
+		actionNode = scrollerOptions[optionKey][1];
+		targetNode = option.target.id || option.target.parentNode.id;
+		scroll_API(rootNode,controlNode,actionNode,targetNode,targetCount);
+	});
+});
+
+function scroll_API(rootNode,controlNode,actionNode,targetNode,targetCount) {
+	//	Testimonies section directional controls
+	const item__width = document.getElementById(controlNode).clientWidth;
+	if (targetNode.includes("left")) {
+		document.getElementById(actionNode).scrollBy({left:(-item__width * targetCount), behavior:'smooth'});
+	} else if (targetNode.includes("right")) {
+		document.getElementById(actionNode).scrollBy({left:(item__width * targetCount), behavior:'smooth'});
+	}
+}	
+
+//	Handles on scroll events
+window.addEventListener('scroll', perform => {
+	mutateHeader();
+	//fadeHeader();		
+});
+
 backToTop.addEventListener("click", e => {
 	window.scrollTo({top:0, behavior:"smooth"});
 });
@@ -218,42 +218,43 @@ hamburger.addEventListener("click", function() {
 });
 
 function handleMarquee() {
-        const marquee = document.querySelectorAll('.marquee');
-        let speed = 1.5;
-        let lastScrollPos = 0;
-        let timer;
-        marquee.forEach(function(el) {
-          const container = el.querySelector('.marquee-content');
-          const content = el.querySelector('.marquee-content > *');
-          //Get total width
-          const elWidth = content.offsetWidth;
-          //Duplicate content
-          let clone = content.cloneNode(true);
-          container.appendChild(clone);
-          let progress = parseInt(documentObject.clientWidth);
-          function loop() {
-            progress = progress - speed;
-            if(progress <= elWidth * -1) {
-              progress = 0;
-            }
-            container.style.transform = 'translateX(' + progress + 'px)';
-            container.style.transform += 'skewX(' + speed * 0.4 + 'deg)';
-            window.requestAnimationFrame(loop);
-          }
-          loop();
-        });
-        /**window.addEventListener('scroll', function() {
-          const maxScrollValue = 12;
-          const newScrollPos = window.scrollY;
-          let scrollValue = newScrollPos - lastScrollPos;
-          if(scrollValue > maxScrollValue) scrollValue = maxScrollValue;
-          else if(scrollValue < -maxScrollValue) scrollValue = -maxScrollValue;
-          speed = scrollValue;
-          clearTimeout(timer);
-          timer = setTimeout(handleSpeedClear, 10);
-        });**/
-        function handleSpeedClear() {
-          speed = 1.5;
-        }
-      };
-      handleMarquee();
+	const marquee = document.querySelectorAll('.marquee');
+	let speed = 1.5;
+	let lastScrollPos = 0;
+	let timer;
+	marquee.forEach(function(el) {
+		const container = el.querySelector('.marquee-content');
+		const content = el.querySelector('.marquee-content > *');
+		//Get total width
+		const elWidth = content.offsetWidth;
+		//Duplicate content
+		let clone = content.cloneNode(true);
+		container.appendChild(clone);
+		let progress = parseInt(documentObject.clientWidth);
+		function loop() {
+		progress = progress - speed;
+		if(progress <= elWidth * -1) {
+			progress = 0;
+		}
+		container.style.transform = 'translateX(' + progress + 'px)';
+		container.style.transform += 'skewX(' + speed * 0.4 + 'deg)';
+		window.requestAnimationFrame(loop);
+		}
+		loop();
+	});
+	/**window.addEventListener('scroll', function() {
+		 const maxScrollValue = 12;
+		const newScrollPos = window.scrollY;
+		let scrollValue = newScrollPos - lastScrollPos;
+		if(scrollValue > maxScrollValue) scrollValue = maxScrollValue;
+		else if(scrollValue < -maxScrollValue) scrollValue = -maxScrollValue;
+		speed = scrollValue;
+		clearTimeout(timer);
+		timer = setTimeout(handleSpeedClear, 10);
+	});**/
+	function handleSpeedClear() {
+		speed = 1.5;
+	}
+};
+
+handleMarquee();
