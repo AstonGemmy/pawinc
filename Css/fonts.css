@@ -1,7 +1,6 @@
 @font-face {
 	font-family: 'Raleway';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Raleway/Raleway-Bold.woff2");
 	src: local("San serif"), local("San-serif"), url("../webfonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../webfonts/Raleway/Raleway-Regular.woff") format("woff"), url("../webfonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../webfonts/Raleway/Raleway-Regular.svg#fontawesome") format("svg");
 	font-display: swap;
@@ -10,7 +9,6 @@
 @font-face {
 	font-family: 'Dosis';
 	font-style: normal;
-	font-display: auto;
 	src: url("../webfonts/Dosis/Dosis-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.svg#fontawesome") format("svg");
 	font-display: swap;
 }
@@ -18,7 +16,6 @@
 @font-face {
 	font-family: 'Comfortaa';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Comfortaa/Comfortaa-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
 	font-display: swap;
 }
@@ -26,7 +23,6 @@
 @font-face {
 	font-family: 'Manrope';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Manrope/Manrope-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Manrope/Manrope-VariableFont_wght.woff2") format("woff2"), url("../webfonts/Manrope/Manrope-VariableFont_wght.woff") format("woff"), url("../webfonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
 	font-display: swap;
 }
@@ -34,7 +30,6 @@
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../webfonts/Roboto/Roboto-Regular.woff") format("woff"), url("../webfonts/Roboto/Roboto-Regular.ttf") format("truetype");
 	font-display: swap;
 }
@@ -42,7 +37,6 @@
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Nunito/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Nunito/Nunito-Regular.woff2") format("woff2"), url("../webfonts/Nunito/Nunito-Regular.woff") format("woff"), url("../webfonts/Nunito/Nunito-Regular.ttf") format("truetype");
 	font-display: swap;
 }
@@ -50,7 +44,6 @@
 @font-face {
 	font-family: 'Montserrat';
 	font-style: normal;
-	font-display: auto;
 	src: local("San serif"), local("San-serif"), url("../webfonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../webfonts/Montserrat/Montserrat-Medium.ttf") format("truetype"), url("../webfonts/Montserrat/Montserrat-Medium.svg#fontawesome") format("svg");
 	font-display: swap;
 }
