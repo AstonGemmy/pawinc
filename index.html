@@ -749,11 +749,13 @@
         <script type="text/javascript">
 			const preload_files = document.querySelectorAll("link");			
 			preload_files.forEach(file => {
-				mime_type = file.type || file.getAttribute("type");
-				if (mime_type.includes("javascript")) {
-					let script_element = document.createElement('script');
-					script_element.src = `${file.href}`;
-					document.body.appendChild(script_element);
+				let mime_type = file.type || file.getAttribute("type");
+				if (mime_type !== null) {
+					if (mime_type.includes("javascript")) {
+						let script_element = document.createElement('script');
+						script_element.src = `${file.href}`;
+						document.body.appendChild(script_element);
+					}
 				}
 			});			
 		</script>
