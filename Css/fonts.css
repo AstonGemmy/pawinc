@@ -9,7 +9,7 @@
 @font-face {
 	font-family: 'Dosis';
 	font-style: normal;
-	src: url("../webfonts/Dosis/Dosis-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.svg#fontawesome") format("svg");
+	src: local("San serif"), local("San-serif"), url("../webfonts/Dosis/Dosis-VariableFont_wght.eot?#iefix") format("embedded-opentype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.ttf") format("truetype"), url("../webfonts/Dosis/Dosis-VariableFont_wght.svg#fontawesome") format("svg");
 	font-display: swap;
 }
 
