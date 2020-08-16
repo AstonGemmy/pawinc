@@ -2,8 +2,8 @@
 	font-family: 'Raleway';
 	font-style: normal;
 	font-display: auto;
-	src: url("../webfonts/Raleway/Raleway-Bold.woff2");
-	src: url("../webfonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../webfonts/Raleway/Raleway-Regular.woff") format("woff"), url("../webfonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../webfonts/Raleway/Raleway-Regular.svg#fontawesome") format("svg");
+	src: local("San serif"), local("San-serif"), url("../webfonts/Raleway/Raleway-Bold.woff2");
+	src: local("San serif"), local("San-serif"), url("../webfonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../webfonts/Raleway/Raleway-Regular.woff") format("woff"), url("../webfonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../webfonts/Raleway/Raleway-Regular.svg#fontawesome") format("svg");
 	font-display: swap;
 }
 
