@@ -72,7 +72,7 @@
 	.leadership-container .leader:nth-child(2) {margin-top:10px;}
 	.leadership-container .leader:nth-child(4) {margin-top:10px;}
 	.leadership-container .leader:nth-child(5) {margin-top:10px;}	
-	.leader-image {width:200px;margin:10px auto 0px auto;height:200px;}
+	.leader-image {width:200px;margin:30px auto 0px auto;height:200px;}
 	.leader-name-tag {width:100%;background-color:unset;box-shadow:unset;color:#FF3300;}	
 	.leader-name-office {color:#777;}
 
