@@ -65,7 +65,7 @@
 
 	
 	.leader {width:100%;}
-	.leadership-container {flex-direction: column;justify-content: space-around;}
+	.leadership-container {flex-direction: column;justify-content: space-around;padding-top:8px;}
 	.leader:nth-child(3) {width:100%;}
 	.leader:nth-child(3) .leader-image {width:250px;height:250px;}	
 	.leadership-container .leader:nth-child(1) {margin-top:10px;}
