@@ -209,13 +209,13 @@
 		height:40px;
 		text-align:left;
 		padding:0px 10px;
-		transition:0.3s;
+		transition:0.8s;
 		text-shadow:0px 0px 5px #5476FF;
 	}
 	
 	.brand-name-on-scroll {
 		color:#394263;
-		font-size:2rem;
+		font-size:1.5rem;
 		text-shadow:0px 0px 0px #5476FF;
 	}
     
