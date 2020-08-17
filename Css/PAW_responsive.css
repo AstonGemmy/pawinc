@@ -104,7 +104,7 @@
 	}
 		
 	
-	.upcoming-event {padding:0px 16px 30px 16px;width:90%;}
+	.upcoming-event {padding:16px 16px 30px 16px;width:90%;}
 	.event-item:nth-child(even) {width:calc(100% - 190px);margin-left: 150px;margin-top:50px;margin-bottom:0px;}
 	.event-item:nth-child(odd) {width:calc(100% - 190px);margin-right: 150px;margin-top:50px;}
 	.event-item:nth-child(odd) .event-image {right:-170px;top:0;}
