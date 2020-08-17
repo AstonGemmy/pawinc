@@ -152,6 +152,12 @@
 	.media-intro {line-height:20px;font-size:20px;padding-top:20px;}
 	.media-btn, .read-more-btn, .leadership .all-leaders {font-size:20px;}
 
+        #adminLogin-form {
+		width:90%;
+		padding: 64px 32px 32px 32px;
+	}
+
+
 }
 
 @media screen and (max-width: 680px) {
