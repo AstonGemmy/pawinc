@@ -1383,7 +1383,7 @@
 
 	#admin-grid {
 		display: grid;
-		/*grid-auto-columns: 1fr;*/
+		grid-auto-columns: 1fr;
 		grid-auto-rows: 100px 1fr 50px;
 		grid-template-areas:
 			"header"
