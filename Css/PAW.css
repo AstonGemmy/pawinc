@@ -260,12 +260,12 @@
 
 	.is-active-menu {
 		opacity:1;
-		transform: translateY(-100vh);
+		transform: translateY(0);
 	}
 
         .is-inactive-menu {
 		opacity:0;
-		transform: translateY(0);
+		transform: translateY(-100vh);
 	}
 
 	.slide-menu a {transition: all .3s;color:white;font-size:18px;margin:10px 10px;padding:8px 12px;display:inline-block;transform:scale(0.8);}
