@@ -157,6 +157,11 @@
 		padding: 64px 32px 32px 32px;
 	}
 
+       #admin-grid {
+		grid-auto-columns: 200px;
+		grid-auto-rows: 100px 1fr 50px;
+       }
+
 
 }
 
