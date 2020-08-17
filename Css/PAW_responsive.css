@@ -157,7 +157,7 @@
 	
 	.day {font-size:14px;padding:5px;}	
 	.programme {font-size:12px;line-height:15px;}
-    .upcoming-event {padding:0px 8px 30px 8px;width:95%;}
+    .upcoming-event {padding:30px 8px 30px 8px;width:95%;}
 	.event-item:nth-child(even), .event-item:nth-child(odd) {width:90%;margin:30px auto;}
 	.event-item:nth-child(odd) .event-image, .event-item:nth-child(even) .event-image {right:unset;top:unset;left:unset;bottom:unset;position:relative;width:100%;height:150px;margin:10px auto;}
 
