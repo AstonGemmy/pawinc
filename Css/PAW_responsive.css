@@ -35,7 +35,7 @@
 	.brand-name {font-size:2rem;height:auto;text-align:center;}	
 	.brand-name-on-scroll {font-size:1.5rem;}
 
-	.slide-menu a {margin:10px auto;}
+	.slide-menu a {margin:10px auto;display:block;width:50%;text-align:center;}
 	
 
     #slide-cover {height:50vh;}
