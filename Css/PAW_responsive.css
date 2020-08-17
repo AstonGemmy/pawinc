@@ -127,7 +127,7 @@
 		background-attachment: normal;
         background-size:100%;
 	}
-	.excerpts .main-caption {color:#0061A6;}
+	.excerpts .main-caption {color:#e74c3c;}
 	#excerpts-left {
 		color:#FFFFFF;
 		background:linear-gradient(to right, rgba(205,205,205,0.7), transparent);
