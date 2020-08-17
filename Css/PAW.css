@@ -260,8 +260,13 @@
 
 	.is-active-menu {
 		opacity:1;
+		transform: translateY(-100vh);
+	}
+
+        .is-inactive-menu {
+		opacity:0;
 		transform: translateY(0);
-	} 
+	}
 
 	.slide-menu a {transition: all .3s;color:white;font-size:18px;margin:10px 10px;padding:8px 12px;display:inline-block;transform:scale(0.8);}
 	.slide-menu a:hover {background-color:rgb(53, 23, 23);transform:scale(0.9);}
