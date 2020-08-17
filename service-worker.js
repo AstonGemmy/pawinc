@@ -11,7 +11,7 @@
        '/Css/animate.css',
        '/Css/all.css',
        '/Js/PAW.js',
-       '/user.json'
+       '/users.json'
      ]);
    })
  );
