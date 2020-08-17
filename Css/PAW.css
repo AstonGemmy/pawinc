@@ -243,7 +243,7 @@
 		color:white;
 		/*transform:translateY(-100vh);*/
 		z-index: 0;
-		height:70vh;
+		height:0vh;
 		position: absolute;
 		overscroll-behavior: contain;
 		-webkit-overflow-scrolling: contain;
