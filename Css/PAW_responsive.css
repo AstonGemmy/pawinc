@@ -153,14 +153,9 @@
 	.media-btn, .read-more-btn, .leadership .all-leaders {font-size:20px;}
 
         #adminLogin-form {
-		width:90%;background:red;
+		width:90%;background-color:red;
 		padding: 64px 32px 32px 32px;
 	}
-
-       #grid-main {
-		width: 200px;
-       }
-
 
 }
 
