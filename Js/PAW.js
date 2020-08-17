@@ -4,6 +4,7 @@ let current_slide = 0;
 const slide_timer_delay = 3000;
 const backToTop = document.getElementById("scroll-to-top");
 const hamburger = document.querySelector(".hamburger");
+const slide_menu = document.querySelector(".slide-menu");
 const header = document.getElementById("header");
 const brand_name = document.getElementById("brand-name");
 let targetCount;
@@ -137,10 +138,12 @@ const mutateHeader = () => {
 		header.classList.add("header-on-scroll");
 		brand_name.classList.add("brand-name-on-scroll");
 		hamburger.classList.add("hamburger-on-scroll");
+                slide_menu.classList.add("header-on-scroll");
 	} else {
 		header.classList.remove("header-on-scroll");
 		brand_name.classList.remove("brand-name-on-scroll");
 		hamburger.classList.remove("hamburger-on-scroll");
+                slide_menu.classList.remove("header-on-scroll");
 	}
 
 	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
