@@ -19,4 +19,10 @@
 
 self.addEventListener('fetch', function(event) {
  alert(event.request.url);
+
+ event.respondWith(
+   caches.match(event.request).then(function(response) {
+     return response || fetch(event.request);
+   })
+ );
 });
