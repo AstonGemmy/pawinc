@@ -244,7 +244,7 @@
 		/*transform:translateY(-100vh);*/
 		z-index: 0;
 		height:0;
-		position: absolute;
+		position:relative;
 		overscroll-behavior: contain;
 		-webkit-overflow-scrolling: contain;
 		left:0;
