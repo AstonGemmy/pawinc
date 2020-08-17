@@ -153,7 +153,7 @@
 	.media-btn, .read-more-btn, .leadership .all-leaders {font-size:20px;}
 
         #adminLogin-form {
-		width:90%;
+		width:90%;background:red;
 		padding: 64px 32px 32px 32px;
 	}
 
