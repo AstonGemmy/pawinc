@@ -792,7 +792,7 @@
 		overflow:hidden;
 		padding:5px;
 		border:5px dashed #777;
-		transition: transform 0.24s ease-out;
+		transition: transform 0.24s ease-out;clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 	}
 
 	.leader-image img {
