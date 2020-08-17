@@ -558,7 +558,10 @@
 		background-size: 100%;
 		font-size:15px;
 	}
-	
+
+	.days-of-activities .main-caption {color:#e74c3c;}	
+	.days-of-activities .main-caption:before {background-color:#e74c3c;}
+		
 	.days-of-activities-section {
 		padding:10px 16px 50px 16px;
 		margin:0px auto;
@@ -757,7 +760,10 @@
 		position:relative;
 		padding:0px 0px 30px 0px;
 	}
-	
+
+	.leadership .main-caption {color:#e74c3c;}	
+	.leadership .main-caption:before {background-color:#e74c3c;}
+		
 	.leadership-container {
 		display:flex;
 		flex-wrap: nowrap;
@@ -789,27 +795,28 @@
 		width:100%;
 		height:150px;		
 		border-radius:200px;
+		padding:5px;
 		overflow:hidden;
-		padding:15px;
-		box-shadow: 0px 0px 5px rgba(0,0,0,1), -5px -4px 5px rgba(0,0,0,1);
-		/*border:5px dashed #777;*/
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+		background:linear-gradient(to top, rgba(0,97,166,0.8),rgba(166, 113, 0, 0.39));
 		transition: transform 0.24s ease-out;
-		clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 	}
 
 	.leader-image img {
 		width:100%;
 		height:100%;
 		border-radius:200px;
+		border:5px outset rgba(117, 0, 10, 0.411);
 	}
 	
 	.leader-name-tag {
-		background-color:#e74c3c;
+		/* background-color:#e74c3c; */
 		padding:0px 8px;
 		margin:8px auto 0px auto;
 		width:100%;
 		font-size:12px;
-		color:white;
+		color:#e74c3c;
+		font-weight: 600;
 		text-align:center;
 		font-family: Comfortaa, Geneva, Tahoma, sans-serif;
 		box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
@@ -817,7 +824,7 @@
 	
 	.leader-name-office {
 		width:100%;
-		color:white;
+		color:#0060AF;
 		font-size:12px;
 		text-align:center;
 	}
@@ -971,7 +978,10 @@
 		text-align:center;
 		padding:0px 0px 30px 0px;
 	}
-	
+
+	.event .main-caption {color:#0061A6;}	
+	.event .main-caption:before {background-color:#0061A6;}
+		
 	.upcoming-event {
 		display: flex;
 		flex-wrap:wrap;

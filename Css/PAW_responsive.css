@@ -2,7 +2,7 @@
 @media screen and (max-width: 1081px) {
 	.main-caption-cover {width:100%;padding:0px 16px;}
 	.footer-section-one, .footer-top-section {flex-wrap:wrap;justify-content:space-between;}
-        .footer-top-section {padding:0px 8px;}
+    .footer-top-section {padding:0px 8px;}
 }
 
 @media screen and (max-width: 901px) {
@@ -88,7 +88,7 @@
 		background-size:100%;
 		background-position: normal;
 	}
-	.testimonies .main-caption {color:black;}	
+	.testimonies .main-caption {color:#e74c3c;}	
 	.testimonies-footer {width:100%;padding:16px 16px;}	
 	.testimonies-cover {width:85%;margin:0px auto;}	
 	.testimonies-container {min-width:calc(100% - 10px);margin:10px 10px;background:#f0f0f0;}	
@@ -127,7 +127,7 @@
 		background-attachment: normal;
         background-size:100%;
 	}
-	.excerpts .main-caption {color:black;}	
+	.excerpts .main-caption {color:#0061A6;}
 	#excerpts-left {
 		color:#FFFFFF;
 		background:linear-gradient(to right, rgba(205,205,205,0.7), transparent);
