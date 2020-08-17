@@ -208,11 +208,13 @@ backToTop.addEventListener("click", e => {
 hamburger.addEventListener("click", function() {
 	if (this.className.includes("is-active")) {
 		this.classList.remove("is-active");
-		document.getElementById("slide-menu").classList.remove("is-active-menu").add("is-inactive-menu");
+		document.getElementById("slide-menu").classList.remove("is-active-menu");
+                document.getElementById("slide-menu").classList.add("is-inactive-menu");
 		document.getElementById("overlay").style.display = "none";
 	} else {
 		this.classList.add("is-active");
-		document.getElementById("slide-menu").classList.remove("is-inactive-menu").add("is-active-menu");
+		document.getElementById("slide-menu").classList.remove("is-inactive-menu");
+                document.getElementById("slide-menu").classList.add("is-active-menu");
 		document.getElementById("overlay").style.display = "block";
 	}
 });
