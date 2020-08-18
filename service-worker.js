@@ -42,21 +42,18 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
-/*
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
+  console.log('Activating new service worker...');
+
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          // Return true if you want to remove this cache,
-          // but remember that caches are shared across
-          // the whole origin
-          return true;
-        }).map(function(cacheName) {
-          return caches.delete(cacheName);
+        cacheNames.map(cacheName => {
+          if (paw_cache.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
         })
       );
     })
   );
 });
-*/
