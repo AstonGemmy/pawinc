@@ -111,8 +111,8 @@
 		width:auto;
 		height:100%;
 		padding:0px 10px;
-		color:#FFFFFF;
-		background-color:red;
+		color:red;
+		background-color:white;
 		z-index:1;
 	}
 
