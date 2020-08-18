@@ -70,7 +70,7 @@
 .hamburger--emphatic {overflow: hidden;}
 .hamburger--emphatic .hamburger-inner {transition: background-color 0.125s 0.175s ease-in;}
 .hamburger--emphatic.is-active .hamburger-inner {
-  transition-delay: 0s;
+  transition-delay: 0.15s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
