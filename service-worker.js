@@ -25,6 +25,9 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('paw_cache').then(function(cache) {
       return fetch(event.request).then(function(response) {
+        if (!cache.match(event.request.url)) {
+            cache.add(event.request.url);
+        }
         //cache.put(event.request.url, response.clone());
         return response;
       });
