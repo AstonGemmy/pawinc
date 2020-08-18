@@ -20,10 +20,10 @@
   text-transform: none;
   background-color:transparent;
   border: 0;
-  margin:1% auto;
+  margin:2.5% auto;
   overflow: visible;
-  width:98%;
-  height: 98%;
+  width:95%;
+  height: 95%;
   text-align: center;
   --pseudoBackgroundColor:white;
 }
