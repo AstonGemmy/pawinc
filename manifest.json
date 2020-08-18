@@ -1,6 +1,7 @@
 {
   "short_name": "PAW Inc",
   "name": "PAW Inc",
+  "description": "PAW official church website",
   "icons": [
     {
       "src": "Images/Thumbnails/splash_icon.png",
@@ -9,7 +10,7 @@
     },
     {
       "src": "Images/Thumbnails/maskable_icon.png",
-      "sizes": "196x196",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
