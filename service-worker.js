@@ -34,12 +34,13 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
+  const new_cache_name = [cache_name];
 
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (allowed_cache.indexOf(cacheName) === -1) {
+          if (new_cache_name.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
