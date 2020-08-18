@@ -35,7 +35,7 @@ self.addEventListener('fetch', function(event) {
         /*if (paw_cache.indexOf(response) == -1) {
              paw_cache.delete(response);
         }*/
-        cache.put(event.request, response.clone());
+        cache.add(event.request, response.clone());
         return response;
       });
     })
