@@ -139,14 +139,14 @@ const mutateHeader = () => {
 	if (document.body.scrollTop > 80 || documentObject.scrollTop > 80) {
 		header.classList.add("header-on-scroll");
 		brand_name.classList.add("brand-name-on-scroll");
-		hamburger_before.classList.add("hamburger-on-scroll");
-                hamburger_after.classList.add("hamburger-on-scroll");
+		hamburger_before.style.backgroundColor = "#0061A6";
+                hamburger_after.style.backgroundColor = "#0061A6";
                 slide_menu.classList.add("slide-menu-on-scroll");
 	} else {
 		header.classList.remove("header-on-scroll");
 		brand_name.classList.remove("brand-name-on-scroll");
-		hamburger_before.classList.remove("hamburger-on-scroll");
-                hamburger_after.classList.remove("hamburger-on-scroll");
+		hamburger_before.style.backgroundColor = "";
+                hamburger_after.style.backgroundColor = "";
                 slide_menu.classList.remove("slide-menu-on-scroll");
 	}
 
