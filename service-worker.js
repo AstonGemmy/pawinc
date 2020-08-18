@@ -21,7 +21,7 @@ self.addEventListener('install', function(e) {
  );
 });
 
-self.addEventListener('fetch', function(event) {
+/*self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open(cache_name).then(function(cache) {
       return fetch(event.request).then(function(response) {
@@ -52,3 +52,4 @@ self.addEventListener('activate', event => {
     })
   );
 });
+*/
