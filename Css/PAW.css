@@ -1438,7 +1438,7 @@ box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.7);
 		border-radius: 100px;
 		overflow: hidden;
 		background-color: white;
-		box-shadow: 2px 4px 3px #777;
+		box-shadow: 0px -2px 1px #BABECC;
 	}
 
 	#adminLogin-form #logo img {
