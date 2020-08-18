@@ -4,8 +4,6 @@ let current_slide = 0;
 const slide_timer_delay = 3000;
 const backToTop = document.getElementById("scroll-to-top");
 const hamburger = document.querySelector(".hamburger");
-const hamburger_before = window.getComputedStyle(document.querySelector(".span-inner"), ':before');
-const hamburger_after = window.getComputedStyle(document.querySelector(".span-inner"), ':after');
 const slide_menu = document.querySelector(".slide-menu");
 const header = document.getElementById("header");
 const brand_name = document.getElementById("brand-name");
@@ -139,14 +137,12 @@ const mutateHeader = () => {
 	if (document.body.scrollTop > 80 || documentObject.scrollTop > 80) {
 		header.classList.add("header-on-scroll");
 		brand_name.classList.add("brand-name-on-scroll");
-		hamburger_before.style.backgroundColor = "#0061A6";
-                hamburger_after.style.backgroundColor = "#0061A6";
+		hamburger.style.pseudoBackgroundColor = "#0061A6";
                 slide_menu.classList.add("slide-menu-on-scroll");
 	} else {
 		header.classList.remove("header-on-scroll");
 		brand_name.classList.remove("brand-name-on-scroll");
-		hamburger_before.style.backgroundColor = "";
-                hamburger_after.style.backgroundColor = "";
+                hamburger.style.pseudoBackgroundColor = "";
                 slide_menu.classList.remove("slide-menu-on-scroll");
 	}
 
