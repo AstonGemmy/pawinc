@@ -1,7 +1,7 @@
   const allowed_cache = [
        '/',
        '/index.html',
-       '/admin_portal.html',
+       '/admin_poral.html',
        '/Css/PAW.css',
        '/Css/PAW_responsive.css',
        '/Css/fonts.css',
@@ -27,6 +27,7 @@ self.addEventListener('fetch', function(event) {
       return fetch(event.request).then(function(response) {
         if (!cache.match(event.request.url)) {
             cache.add(event.request.url);
+            alert(event.request.url);
         }
         //cache.put(event.request.url, response.clone());
         return response;
