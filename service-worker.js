@@ -4,7 +4,7 @@
      return cache.addAll([
        '/',
        '/index.html',
-       '/adminIndex.html',
+       '/admin_portal.html',
        '/Css/PAW.css',
        '/Css/PAW_responsive.css',
        '/Css/fonts.css',
@@ -18,7 +18,7 @@
 });
 
 self.addEventListener('fetch', function(event) {
- console.log(event.request.url);
+ //console.log(event.request.url);
 
  event.respondWith(
    caches.match(event.request).then(function(response) {
