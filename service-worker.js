@@ -11,9 +11,11 @@
        '/users.json'
      ];
 
+  const cache_name = "paw-cache-v1";
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('paw_cache').then(function(cache) {
+   caches.open(cache_name).then(function(cache) {
      return cache.addAll(allowed_cache);
    })
  );
