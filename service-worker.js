@@ -1,7 +1,7 @@
   const allowed_cache = [
        '/',
        '/index.html',
-       '/admin_poral.html',
+       '/admin_portal.html',
        '/Css/PAW.css',
        '/Css/PAW_responsive.css',
        '/Css/fonts.css',
