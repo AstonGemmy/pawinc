@@ -137,12 +137,15 @@ const mutateHeader = () => {
 	if (document.body.scrollTop > 80 || documentObject.scrollTop > 80) {
 		header.classList.add("header-on-scroll");
 		brand_name.classList.add("brand-name-on-scroll");
-		hamburger.style.setProperty("--pseudoBackgroundColor","#0061A6");
+		hamburger.style.setProperty("--pseudoBackgroundColor","#394263");
+                hamburger.classList.add("header-on-scroll");
+
                 slide_menu.classList.add("slide-menu-on-scroll");
 	} else {
 		header.classList.remove("header-on-scroll");
 		brand_name.classList.remove("brand-name-on-scroll");
-                hamburger.style.setProperty("--pseudoBackgroundColor","#fff");
+                hamburger.style.setProperty("--pseudoBackgroundColor","#ffffff");
+                hamburger.classList.remove("header-on-scroll")
                 slide_menu.classList.remove("slide-menu-on-scroll");
 	}
 
