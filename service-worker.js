@@ -25,12 +25,11 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open(cache_name).then(function(cache) {
       return fetch(event.request).then(function(response) {
-        if (!cache.match(event.request.url)) {
+        /*if (!cache.match(event.request.url)) {
             cache.add(event.request.url);
-            
-        }
-alert(event.request.url);
-        //cache.put(event.request.url, response.clone());
+        }*/
+        caches.delete(cache_name);
+        cache.put(event.request, response.clone());
         return response;
       });
     })
