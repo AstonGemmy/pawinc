@@ -74,8 +74,7 @@
 	.leadership-container .leader:nth-child(4) {margin-top:10px;}
 	.leadership-container .leader:nth-child(5) {margin-top:10px;}	
 	.leader-image {width:200px;margin:30px auto 0px auto;height:200px;}
-	.leader-name-tag {width:100%;background-color:unset;box-shadow:unset;color:#FF3300;}	
-	.leader-name-office {color:#777;}
+	.leader-name-tag {width:100%;background-color:unset;box-shadow:unset;color:#FF3300;}
 
 
 	.day-and-activity:nth-child(1), .day-and-activity:nth-child(2), .day-and-activity:nth-child(3), .day-and-activity:nth-child(4) {width:calc((100% - 20px) / 2);}
