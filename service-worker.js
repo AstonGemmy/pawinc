@@ -38,18 +38,16 @@ self.addEventListener('activate', event => {
   );
 });
 
-/*self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.open(cache_name).then(function(cache) {
-      return fetch(event.request).then(function(response) {
-        if (!cache.match(event.request.url)) {
-            cache.add(event.request.url);
-        }
-        caches.delete(cache_name);
-        cache.put(event.request, response.clone());
-        return response;
-      });
+    caches.open(cache_name).then(async function(cache) {
+      const response = await fetch(event.request);
+      // if (!cache.match(event.request.url)) {
+      //     cache.add(event.request.url);
+      // }
+      caches.delete(cache_name);
+      cache.put(event.request, response.clone());
+      return response;
     })
   );
 });
-*/
