@@ -50,7 +50,7 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('paw_cache').then(function(cache) {
       return fetch(event.request).then(function(response) {
-        if (caches.indexOf(event.request) == -1) {
+        if (paw_cache.indexOf(response) == -1) {
              paw_cache.delete(response);
         }
         cache.put(event.request, response.clone());
