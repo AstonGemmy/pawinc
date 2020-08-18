@@ -23,7 +23,7 @@ self.addEventListener('install', function(e) {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.open('paw_cache').then(function(cache) {
+    caches.open(cache_name).then(function(cache) {
       return fetch(event.request).then(function(response) {
         if (!cache.match(event.request.url)) {
             cache.add(event.request.url);
