@@ -17,7 +17,7 @@
  );
 });
 
-self.addEventListener('activate', function(event) {
+/*self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
@@ -33,6 +33,7 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+*/
 
 /*self.addEventListener('fetch', function(event) {
  //console.log(event.request.url);
@@ -49,6 +50,9 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('paw_cache').then(function(cache) {
       return fetch(event.request).then(function(response) {
+        if (caches.indexOf(event.request) > -1) {
+             caches.delete(request);
+        }
         cache.put(event.request, response.clone());
         return response;
       });
