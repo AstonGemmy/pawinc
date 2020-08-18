@@ -27,8 +27,9 @@ self.addEventListener('fetch', function(event) {
       return fetch(event.request).then(function(response) {
         if (!cache.match(event.request.url)) {
             cache.add(event.request.url);
-            alert(event.request.url);
+            
         }
+alert(event.request.url);
         //cache.put(event.request.url, response.clone());
         return response;
       });
