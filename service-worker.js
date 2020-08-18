@@ -43,7 +43,7 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('paw_cache').then(function(cache) {
       return fetch(event.request).then(function(response) {
-        cache.put(event.request, response.clone());
+        cache.put(event.request.url, response.clone());
         return response;
       });
     })
