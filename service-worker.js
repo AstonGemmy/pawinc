@@ -17,7 +17,7 @@
  );
 });
 
-self.addEventListener('fetch', function(event) {
+/*self.addEventListener('fetch', function(event) {
  //console.log(event.request.url);
 
  event.respondWith(
@@ -25,4 +25,16 @@ self.addEventListener('fetch', function(event) {
      return response || fetch(event.request);
    })
  );
+});
+*/
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.open('paw_cache').then(function(cache) {
+      return fetch(event.request).then(function(response) {
+        cache.put(event.request, response.clone());
+        return response;
+      });
+    })
+  );
 });
