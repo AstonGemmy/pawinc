@@ -1424,12 +1424,12 @@ box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.7);
 		position: relative;
 		border-radius: 4px;
 		border:0px solid #F0F0F0;
-		box-shadow: 0px 0px 5px #BAEBCB;
+		box-shadow: 0px 0px 5px #BABECC;
 	}
 
 	#adminLogin-form #logo {
-		width:100px;
-		height:100px;
+		width:60px;
+		height:60px;
 		position: absolute;
 		left: 50%;
 		top:0;
@@ -1437,6 +1437,7 @@ box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.7);
 		transform: translate(-50%, -50%);
 		border-radius: 100px;
 		overflow: hidden;
+		background-color: white;
 		box-shadow: 2px 4px 3px #777;
 	}
 
