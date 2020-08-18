@@ -49,7 +49,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (paw_cache.indexOf(cacheName) === -1) {
+          if (caches.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
