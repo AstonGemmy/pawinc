@@ -21,23 +21,7 @@ self.addEventListener('install', function(e) {
  );
 });
 
-/*self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.open(cache_name).then(function(cache) {
-      return fetch(event.request).then(function(response) {
-        if (!cache.match(event.request.url)) {
-            cache.add(event.request.url);
-        }
-        caches.delete(cache_name);
-        cache.put(event.request, response.clone());
-        return response;
-      });
-    })
-  );
-});
-*/
-
-/*self.addEventListener('activate', event => {
+self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
   const new_cache_name = [cache_name];
 
@@ -50,6 +34,21 @@ self.addEventListener('install', function(e) {
           }
         })
       );
+    })
+  );
+});
+
+/*self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.open(cache_name).then(function(cache) {
+      return fetch(event.request).then(function(response) {
+        if (!cache.match(event.request.url)) {
+            cache.add(event.request.url);
+        }
+        caches.delete(cache_name);
+        cache.put(event.request, response.clone());
+        return response;
+      });
     })
   );
 });
