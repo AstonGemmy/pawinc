@@ -267,7 +267,7 @@ function handleMarquee() {
 
 handleMarquee();
 
-window.addEventListener('load', function () {
+/*window.addEventListener('load', function () {
 
 	const notificationButton = document.getElementById('notificationTrigger');
 	const title = 'Push Codelab';
@@ -303,4 +303,4 @@ window.addEventListener('load', function () {
 		}
 	});
 });
-    
+*/
