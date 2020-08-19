@@ -288,7 +288,7 @@ window.addEventListener('load', function () {
 	notificationButton.addEventListener('click', function () {
 		
 		if (window.Notification && Notification.permission === "granted") {
-			// new Notification(title, options);
+			registration.serviceWorker(title, options);
 			alert("Permission granted");
 		} else if (window.Notification && Notification.permission !== "denied") {
 			Notification.requestPermission(function (status) {
