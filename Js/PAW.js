@@ -267,15 +267,15 @@ function handleMarquee() {
 
 handleMarquee();
 
-const notificationButton = document.getElementById('notificationTrigger');
-const title = 'Push Codelab';
-const options = {
-	body: 'Yay it works.',
-    icon: '/Images/PAW.png',
-	badge: '/Images/PAW.png'
-};
-
 window.addEventListener('load', function () {
+	
+	const notificationButton = document.getElementById('notificationTrigger');
+	const title = 'Push Codelab';
+	const options = {
+		body: 'Yay it works.',
+		icon: '/Images/PAW.png',
+		badge: '/Images/PAW.png'
+	};
 
 	if (window.Notification && Notification.permission !== "granted") {
 		Notification.requestPermission(function (status) {
