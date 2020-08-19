@@ -302,9 +302,4 @@ handleMarquee();
 			alert("Hi for normal!");
 		}
 	});
-<<<<<<< HEAD
 });
-=======
-});
-*/
->>>>>>> a5104c1c2da2a1244a3b26f217b1356d4e7674c3
