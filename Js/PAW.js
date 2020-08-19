@@ -281,6 +281,7 @@ window.addEventListener('load', function () {
   const notificationButton = document.getElementById('notificationTrigger');
 
   notificationButton.addEventListener('click', function () {
+alert("here");
     // If the user agreed to get notified
     // Let's try to send ten notifications
     if (window.Notification && Notification.permission === "granted") {
