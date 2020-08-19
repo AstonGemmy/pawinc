@@ -278,7 +278,7 @@ window.addEventListener('load', function () {
     });
   }
 
-  const notificationButton = document.getElementsByTagName('button')[0];
+  const notificationButton = document.getElementById('notificationTrigger');
 
   notificationButton.addEventListener('click', function () {
     // If the user agreed to get notified
