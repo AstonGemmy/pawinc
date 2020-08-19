@@ -276,8 +276,7 @@ const options = {
 };
 
 window.addEventListener('load', function () {
-<<<<<<< HEAD
-	
+
 	if (window.Notification && Notification.permission !== "granted") {
 		Notification.requestPermission(function (status) {
 			if (Notification.permission !== status) {
