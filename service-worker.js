@@ -88,6 +88,12 @@ self.addEventListener('fetch', function(event) {
 });
 
 self.addEventListener('push', function(event) {
+  const promiseChain = self.registration.showNotification('Hello, World.');
+
+  event.waitUntil(promiseChain);
+});
+
+/*self.addEventListener('push', function(event) {
 
   const title = 'Push Codelab';
   const options = {
@@ -97,4 +103,4 @@ self.addEventListener('push', function(event) {
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
-});
+});*/
