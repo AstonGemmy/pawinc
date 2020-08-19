@@ -286,19 +286,20 @@ window.addEventListener('load', function () {
 	}
 	
 	notificationButton.addEventListener('click', function () {
-		alert("Button clicked");
+		
 		if (window.Notification && Notification.permission === "granted") {
-			new Notification(title, options);
+			// new Notification(title, options);
+			alert("Permission granted");
 		} else if (window.Notification && Notification.permission !== "denied") {
 			Notification.requestPermission(function (status) {
 				if (status === "granted") {
-					new Notification(title, options);
+					alert("Permission granted for chrome");
 				} else {
-					alert("Hi!");
+					alert("Hi for chrome!");
 				}
 			});
 		} else {
-			alert("Hi!");
+			alert("Hi for normal!");
 		}
 	});
 });
