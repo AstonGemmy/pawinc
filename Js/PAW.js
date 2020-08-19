@@ -267,7 +267,7 @@ function handleMarquee() {
 
 handleMarquee();
 
-window.addEventListener('load', function () {
+/*window.addEventListener('load', function () {
   // At first, let's check if we have permission for notification
   // If not, let's ask for it
   if (window.Notification && Notification.permission == "denied") {
@@ -278,3 +278,4 @@ window.addEventListener('load', function () {
     });
 
   const notificationButton = document.getElementById('notificationTrigger');
+*/
