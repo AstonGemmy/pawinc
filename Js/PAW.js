@@ -267,7 +267,7 @@ function handleMarquee() {
 
 handleMarquee();
 
-window.addEventListener('load', function () {
+/*window.addEventListener('load', function () {
 
 	const notificationButton = document.getElementById('notificationTrigger');
 	const title = 'Push Codelab';
@@ -288,7 +288,7 @@ window.addEventListener('load', function () {
 	notificationButton.addEventListener('click', function () {
 		
 		if (window.Notification && Notification.permission === "granted") {
-			// new Notification(title, options);
+			registration.showNotification(title, options);
 			alert("Permission granted");
 		} else if (window.Notification && Notification.permission !== "denied") {
 			Notification.requestPermission(function (status) {
@@ -302,4 +302,9 @@ window.addEventListener('load', function () {
 			alert("Hi for normal!");
 		}
 	});
+<<<<<<< HEAD
 });
+=======
+});
+*/
+>>>>>>> a5104c1c2da2a1244a3b26f217b1356d4e7674c3
