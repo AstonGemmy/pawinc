@@ -61,7 +61,7 @@ self.addEventListener('fetch', function(event) {
           return response;
         }
                 
-        console.log(`Fetching from ${event.request}`);
+        console.log(`Fetching from ${event.request.url}`);
         return fetch(event.request).then(
           function(response) {
             // Check if we received a valid response
