@@ -770,7 +770,7 @@
 						.register('/service-worker.js')
 						.then(function(registration) {
 							console.log("Service Worker Registered");
-							return registration;
+							swRegistration = registration;
 						})
 					}
 				}
@@ -795,7 +795,6 @@
 
 				notificationButton.addEventListener('click', function () {
 
-					swRegistration = registerServiceWorker();
 					if (window.Notification && Notification.permission === "granted") {
 						swRegistration.showNotification(title, options);
 					} else if (window.Notification && Notification.permission !== "denied") {
