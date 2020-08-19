@@ -280,7 +280,7 @@ window.addEventListener('load', function () {
 
   const notificationButton = document.getElementById('notificationTrigger');
 
-  notificationButton.addEventListener('click', function () {
+/*  notificationButton.addEventListener('click', function () {
 
     // If the user agreed to get notified
     // Let's try to send ten notifications
@@ -328,3 +328,13 @@ window.addEventListener('load', function () {
     }
   });
 });
+*/
+
+function updateBtn() {
+  if (Notification.permission === 'denied') {
+    notificationButton.textContent = 'Push Messaging Blocked.';
+    notificationButton.disabled = true;
+  }
+  notificationButton.disabled = false;
+}
+updateBtn();
