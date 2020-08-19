@@ -93,7 +93,7 @@ self.addEventListener('push', function(event) {
   const options = {
     body: 'Yay it works.',
     icon: '/Images/Logo/PAW.png',
-    badge: 'Images/Logo/PAW.png'
+    badge: '/Images/Logo/PAW.png'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
