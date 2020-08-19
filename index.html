@@ -748,7 +748,8 @@
 	<!-- Body Ends -->
 	
 	<!-- Scripts -->
-        <script type="text/javascript">
+		<script type="text/javascript">
+		
 			const preload_files = document.querySelectorAll("link");			
 			preload_files.forEach(file => {
 				let mime_type = file.type || file.getAttribute("type");
@@ -794,7 +795,7 @@
 
 				notificationButton.addEventListener('click', function () {
 
-					const swRegistration = await registerServiceWorker();
+					const swRegistration = registerServiceWorker();
 					if (window.Notification && Notification.permission === "granted") {
 						swRegistration.showNotification(title, options);
 					} else if (window.Notification && Notification.permission !== "denied") {
