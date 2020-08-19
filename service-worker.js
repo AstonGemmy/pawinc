@@ -88,11 +88,10 @@ self.addEventListener('fetch', function(event) {
 });
 
 
-// self.addEventListener('push', function(event) {
-//   const promiseChain = self.registration.showNotification('Hello, World.');
-
-//   event.waitUntil(promiseChain);
-// });
+self.addEventListener('push', function(event) {
+  const promiseChain = self.showNotification('Hello, World.');
+  event.waitUntil(promiseChain);
+});
 
 /*self.addEventListener('push', function(event) {
 
