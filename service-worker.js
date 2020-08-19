@@ -61,8 +61,8 @@ self.addEventListener('fetch', function(event) {
           return response;
         }
         
-        console.log("This is the response" + response);
-        console.log("Fetch event to " + event.request);
+        console.log("This is the response" + response.clone());
+        console.log("Fetch event to " + event.request.url);
         return fetch(event.request).then(
           function(response) {
             // Check if we received a valid response
