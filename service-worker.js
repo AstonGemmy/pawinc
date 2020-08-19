@@ -13,6 +13,19 @@
 
   const cache_name = "paw-cache-v1";
 
+  
+
+if('serviceWorker' in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+    .register('/service-worker.js')
+    .then(function(swRegistration) {
+      console.log("Service Worker Registered");
+      registration = swRegistration;
+    })
+  });
+}
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open(cache_name).then(function(cache) {
@@ -87,11 +100,49 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
-self.addEventListener('push', function(event) {
-  const promiseChain = self.registration.showNotification('Hello, World.');
+window.addEventListener('load', function () {
 
-  event.waitUntil(promiseChain);
+	const notificationButton = document.getElementById('notificationTrigger');
+	const title = 'Push Codelab';
+	const options = {
+		body: 'Yay it works.',
+		icon: '/Images/PAW.png',
+		badge: '/Images/PAW.png'
+	};
+
+	if (window.Notification && Notification.permission !== "granted") {
+		Notification.requestPermission(function (status) {
+			if (Notification.permission !== status) {
+				Notification.permission = status;
+			}
+		});
+	}
+	
+	notificationButton.addEventListener('click', function () {
+		
+		if (window.Notification && Notification.permission === "granted") {
+			registration.showNotification(title, options);
+		} else if (window.Notification && Notification.permission !== "denied") {
+			Notification.requestPermission(function (status) {
+				if (status === "granted") {
+					registration.showNotification(title, options);
+				} else {
+					alert("Hi for chrome!");
+				}
+			});
+		} else {
+			alert("Hi for normal!");
+		}
+
+	});
+
 });
+
+// self.addEventListener('push', function(event) {
+//   const promiseChain = self.registration.showNotification('Hello, World.');
+
+//   event.waitUntil(promiseChain);
+// });
 
 /*self.addEventListener('push', function(event) {
 
