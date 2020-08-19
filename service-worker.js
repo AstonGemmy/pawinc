@@ -68,7 +68,7 @@ self.addEventListener('fetch', function(event) {
             if(!response || response.status !== 200 || response.type !== 'basic') {
               return response;
             }
-            console.log("This is the response" + response.clone());
+            console.log("This is the response" + JSON.stringify(response.clone()));
             // IMPORTANT: Clone the response. A response is a stream
             // and because we want the browser to consume the response
             // as well as the cache consuming the response, we need
