@@ -270,12 +270,13 @@ handleMarquee();
 window.addEventListener('load', function () {
   // At first, let's check if we have permission for notification
   // If not, let's ask for it
-  if (window.Notification && Notification.permission !== "granted") {
+  if (window.Notification && Notification.permission == "denied") {
     Notification.requestPermission(function (status) {
       if (Notification.permission !== status) {
         Notification.permission = status;
       }
     });
+
   }
 
   const notificationButton = document.getElementById('notificationTrigger');
@@ -329,12 +330,3 @@ window.addEventListener('load', function () {
   });
 });
 */
-
-function updateBtn() {
-  if (Notification.permission === 'denied') {
-    notificationButton.textContent = 'Push Messaging Blocked.';
-    notificationButton.disabled = true;
-  }
-  notificationButton.disabled = false;
-}
-updateBtn();
