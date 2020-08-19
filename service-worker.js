@@ -95,5 +95,5 @@ self.addEventListener('push', function(event) {
     icon: '/Images/Logo/PAW.png',
     badge: '/Images/Logo/PAW.png'
   };
-  event.waitUntil(self.showNotification(title, options));
+  event.waitUntil(showNotification(title, options));
 });
