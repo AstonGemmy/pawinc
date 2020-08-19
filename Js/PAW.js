@@ -268,7 +268,7 @@ function handleMarquee() {
 handleMarquee();
 
 window.addEventListener('load', function () {
-	
+
 	const notificationButton = document.getElementById('notificationTrigger');
 	const title = 'Push Codelab';
 	const options = {
@@ -286,6 +286,7 @@ window.addEventListener('load', function () {
 	}
 	
 	notificationButton.addEventListener('click', function () {
+		alert("Button clicked");
 		if (window.Notification && Notification.permission === "granted") {
 			new Notification(title, options);
 		} else if (window.Notification && Notification.permission !== "denied") {
