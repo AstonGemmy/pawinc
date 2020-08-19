@@ -91,7 +91,7 @@ self.addEventListener('push', function(event) {
 
   const title = 'Push Codelab';
   const options = {
-    body: 'Yay it works.',
+    body: 'Yay it works service worker.',
     icon: '/Images/Logo/PAW.png',
     badge: '/Images/Logo/PAW.png'
   };
