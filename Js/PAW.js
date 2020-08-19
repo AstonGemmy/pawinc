@@ -277,6 +277,4 @@ window.addEventListener('load', function () {
       }
     });
 
-  }
-
   const notificationButton = document.getElementById('notificationTrigger');
