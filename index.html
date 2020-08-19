@@ -760,6 +760,58 @@
 					}
 				}
 			});
+
+			const registerServiceWorker = () => {
+  if('serviceWorker' in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+      .register('/service-worker.js')
+      .then(function(registration) {
+        console.log("Service Worker Registered");
+        return registration;
+      })
+    });
+  }
+}
+
+			window.addEventListener('load', function () {
+
+const notificationButton = document.getElementById('notificationTrigger');
+const title = 'Push Codelab';
+const options = {
+	body: 'Yay it works.',
+	icon: '/Images/PAW.png',
+	badge: '/Images/PAW.png'
+};
+
+if (window.Notification && Notification.permission !== "granted") {
+	Notification.requestPermission(function (status) {
+		if (Notification.permission !== status) {
+			Notification.permission = status;
+		}
+	});
+}
+
+notificationButton.addEventListener('click', function () {
+	const swRegistration = await registerServiceWorker();
+	if (window.Notification && Notification.permission === "granted") {
+		swRegistration.showNotification(title, options);
+	} else if (window.Notification && Notification.permission !== "denied") {
+		Notification.requestPermission(function (status) {
+			if (status === "granted") {
+				swRegistration.showNotification(title, options);
+			} else {
+				alert("Hi for chrome!");
+			}
+		});
+	} else {
+		alert("Hi for normal!");
+	}
+
+});
+
+});
+
 		</script>
 	<!-- Scripts end -->
 	
