@@ -87,7 +87,7 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
-self.addEventListener('push', function(event) {
+/*self.addEventListener('push', function(event) {
 
   const title = 'Push Codelab';
   const options = {
@@ -96,4 +96,4 @@ self.addEventListener('push', function(event) {
     badge: '/Images/Logo/PAW.png'
   };
   event.waitUntil(registration.showNotification(title, options));
-});
+});*/
