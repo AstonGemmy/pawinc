@@ -33,7 +33,7 @@
 	
 	.header {padding:5px;}	
 	.brand-name {font-size:2rem;height:auto;text-align:center;}	
-	.brand-name-on-scroll {font-size:.5rem;}
+	.brand-name-on-scroll {font-size:1rem;}
 
 	/*.slide-menu {padding:12px 8px;}*/
         .slide-menu a {margin:5px auto;width:100%;}
