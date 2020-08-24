@@ -796,11 +796,11 @@
 				notificationButton.addEventListener('click', function () {
 
 					if (window.Notification && Notification.permission === "granted") {
-						let vd = new Notification(title, options);
+						swRegistration.showNotification(title, options);
 					} else if (window.Notification && Notification.permission !== "denied") {
 						Notification.requestPermission(function (status) {
 							if (status === "granted") {
-								let vd = new Notification(title, options);
+								swRegistration.showNotification(title, options);
 							} else {
 								alert("Hi for chrome!");
 							}
