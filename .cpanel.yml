@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sitesdesignkago/pawinc/
+    - /bin/cp index.html $DEPLOYPATH
